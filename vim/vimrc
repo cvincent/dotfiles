@@ -4,27 +4,8 @@ set nocompatible
 " ### VUNDLE
 
 filetype off
-" set rtp+=~/.vim/bundle/Vundle.vim
 call plug#begin()
 
-" " Vundle self-manages
-" " Plugin 'gmarik/Vundle.vim'
-" " Modern JavaScript support
-" Plug 'pangloss/vim-javascript'
-" " JSX support
-" Plug 'mxw/vim-jsx'
-" call plug#end()
-"  
-" filetype plugin indent on
-" syntax on
-" set autoindent
-" set shiftwidth=2
-" set shiftround
-" let g:xml_syntax_folding = 0
-" finish
-
-" Vundle self-manages
-Plug 'gmarik/Vundle.vim'
 " Awesome theme
 Plug 'altercation/vim-colors-solarized'
 " Nicer file navigation
