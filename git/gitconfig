@@ -1,0 +1,15 @@
+[user]
+	name = Chris Vincent
+	email = c.j.vincent@gmail.com
+[credential]
+	helper = osxkeychain
+[init]
+	templatedir = ~/.git_template
+[alias]
+	ctags = !.git/hooks/ctags
+[core]
+	excludesfile = /Users/cvincent/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

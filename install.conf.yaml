@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/fish/config.fish: fish
+    ~/.vim: vim/vim
+    ~/.vimrc: vim/vimrc
+    ~/.gvimrc: vim/gvimrc
+    ~/.git_template: git/git_template
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    ~/.gemrc: gemrc
+    ~/.irbrc: irbrc
+    ~/.rspec: rspec
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
