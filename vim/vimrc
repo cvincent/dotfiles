@@ -6,6 +6,11 @@ set nocompatible
 filetype off
 call plug#begin()
 
+if v:version >= 704
+  " Awesome completion
+  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+endif
+
 " Awesome theme
 Plug 'altercation/vim-colors-solarized'
 " Nicer file navigation
@@ -61,12 +66,6 @@ Plug 'avdgaag/vim-phoenix'
 Plug 'pangloss/vim-javascript'
 " JSX support
 Plug 'mxw/vim-jsx'
-
-if v:version >= 704
-  " Awesome completion
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-endif
-
 " Automatically add end and such
 Plug 'tpope/vim-endwise'
 " CoffeeScript support
