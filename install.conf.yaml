@@ -15,6 +15,7 @@
     ~/.gemrc: gemrc
     ~/.irbrc: irbrc
     ~/.rspec: rspec
+    ~/.tmux.conf: tmux.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
