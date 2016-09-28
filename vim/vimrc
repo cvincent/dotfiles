@@ -90,6 +90,8 @@ Plug 'saltstack/salt-vim'
 Plug 'yssl/QFEnter'
 " Quickly convert Ruby block formats
 Plug 'jgdavey/vim-blockle'
+" Persistent sessions
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 filetype plugin indent on
