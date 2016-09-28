@@ -1,4 +1,10 @@
 let g:rails_projections = {
+      \   "config/routes.rb": {
+      \     "command": "routes",
+      \   },
+      \   "config/application.rb": {
+      \     "command": "app",
+      \   },
       \   "app/util/*.rb": {
       \     "command": "util",
       \     "template": "class %S\nend",
