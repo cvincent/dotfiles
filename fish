@@ -117,9 +117,11 @@ set ECLIPSE_HOME /Applications/eclipse
 
 function rule
   set -l _hr (printf "%*s" (tput cols))
+  echo \n
   if test -z $argv
     printf $_hr | sed -e s/\ /\-/g
   else
     printf $_hr | sed -e s/\ /$argv/g
   end
+  echo \n
 end
