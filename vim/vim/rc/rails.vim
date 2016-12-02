@@ -20,6 +20,10 @@ let g:rails_projections = {
       \     "template": "class %SWorker\n  include Sidekiq::Worker\n\n  def perform(*args)\n  end\nend",
       \     "test": "spec/workers/%s_worker_spec.rb"
       \   },
+      \   "app/admin/*.rb": {
+      \     "command": "admin",
+      \     "template": "ActiveAdmin.register {camelcase|singular|capitalize} do\n\nend"
+      \   },
       \   "app/authorizers/*_authorizer.rb": {
       \     "command": "authorizer",
       \     "template": "class %SAuthorizer < ApplicationAuthorizer\n  \nend",
