@@ -64,6 +64,8 @@ Plug 'slashmili/alchemist.vim'
 Plug 'avdgaag/vim-phoenix'
 " Modern JavaScript support
 Plug 'pangloss/vim-javascript'
+" More JavaScript support
+Plug 'ternjs/tern_for_vim'
 " JSX support
 Plug 'mxw/vim-jsx'
 " Automatically add end and such
@@ -96,6 +98,11 @@ Plug 'tpope/vim-obsession'
 Plug 'junegunn/vim-easy-align'
 " Crystal support
 Plug 'rhysd/vim-crystal'
+" Lisp editing
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'oblitum/rainbow'
+Plug 'tpope/vim-fireplace'
 
 call plug#end()
 filetype plugin indent on

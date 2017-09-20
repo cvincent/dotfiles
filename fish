@@ -1,5 +1,7 @@
 # Command prompt
 
+set -g CDPATH . ~ ~/src ~/src/fullstack
+
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
 end
@@ -93,17 +95,21 @@ alias rc="rails c"
 
 # Docker
 
-set DOCKER_HOST tcp://192.168.59.103:2375
-alias docker="docker -H $DOCKER_HOST"
+# set DOCKER_HOST tcp://192.168.59.103:2375
+# alias docker="docker -H $DOCKER_HOST"
 
-function docker_enter
-  boot2docker ssh '[ -f /var/lib/boot2docker/nsenter ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
-  boot2docker ssh -t sudo /var/lib/boot2docker/docker-enter "$argv"
-end
+# function docker_enter
+#   boot2docker ssh '[ -f /var/lib/boot2docker/nsenter ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
+#   boot2docker ssh -t sudo /var/lib/boot2docker/docker-enter "$argv"
+# end
 
 # Node
 
 set NODE_PATH /usr/local/lib/node_modules
+
+# Go
+
+set -x GOPATH $HOME/src/go
 
 # rlwrap for iex
 
