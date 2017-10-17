@@ -38,6 +38,10 @@ function safe_end_procs {
 }
 
 function safe_kill_panes_of_current_session {
+  if [ -f Session.vim ]; then
+    echo $(mvim --servername $(basename $(pwd)) --remote-send '<C-\><C-N>:wqa<CR>')
+  fi
+
   session_name=$(tmux display-message -p '#S')
   current_panes=$(tmux list-panes -a -F "#{pane_id} #{pane_current_command} #{session_name}\n" | grep "$session_name")
 
