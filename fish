@@ -68,11 +68,6 @@ function fish_greeting
   set_color normal
 end
 
-# Academia
-
-set ACADEMIA_PGSQL ~/var/pgsql
-set ACADEMIA_APP ~/src/academia/projects/academia-app
-
 # rbenv
 
 set homebrew /usr/local/bin /usr/local/sbin
@@ -131,3 +126,5 @@ function rule
   end
   echo \n
 end
+
+source ~/.secrets
