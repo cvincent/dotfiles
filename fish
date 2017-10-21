@@ -80,7 +80,7 @@ set -gx RBENV_ROOT /usr/local/var/rbenv
 
 set PATH ~/bin $PATH
 set PATH ./bin $PATH
-set EDITOR mvim
+set EDITOR gnvim
 
 # Rails
 

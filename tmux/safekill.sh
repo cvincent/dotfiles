@@ -24,13 +24,13 @@ function safe_end_procs {
   done
 
   if [ -f tmp/pids/kill-3.pids ]; then
-    cat tmp/pids/kill-3.pids | xargs kill -3
+    echo $(cat tmp/pids/kill-3.pids | xargs kill -3)
   fi
   if [ -f tmp/pids/kill-6.pids ]; then
-    cat tmp/pids/kill-6.pids | xargs kill -6
+    echo $(cat tmp/pids/kill-6.pids | xargs kill -6)
   fi
   if [ -f tmp/pids/kill-9.pids ]; then
-    cat tmp/pids/kill-9.pids | xargs kill -9
+    echo $(cat tmp/pids/kill-9.pids | xargs kill -9)
   fi
 
   echo $(rm tmp/pids/kill-*)
@@ -39,7 +39,10 @@ function safe_end_procs {
 
 function safe_kill_panes_of_current_session {
   if [ -f Session.vim ]; then
-    echo $(mvim --servername $(basename $(pwd)) --remote-send '<C-\><C-N>:wqa<CR>')
+    echo $(nvr --servername $(basename $(pwd)) --remote-send '<C-\><C-N>:wqa<CR>')
+  fi
+  if [ -f tmp/.has-chrome-session ]; then
+    echo $(close-chrome-window $(basename $(pwd)))
   fi
 
   session_name=$(tmux display-message -p '#S')
