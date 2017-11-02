@@ -18,6 +18,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/nvim/plugged: nvim/plugged
+    ~/.config/nvim/rc: nvim/rc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

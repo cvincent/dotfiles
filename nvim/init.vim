@@ -225,10 +225,13 @@ set laststatus=2
 set background=dark
 colorscheme NeoSolarized
 
+" Don't highlight search
+set nohlsearch
+
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash
 
 " Source other customizations
-for f in split(glob('~/.vim/rc/*.vim'), '\n')
+for f in split(glob('~/.config/nvim/rc/*.vim'), '\n')
   exe 'source' f
 endfor
