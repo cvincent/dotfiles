@@ -1,10 +1,10 @@
 filetype off
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 
 " Dependency for deoplete (and others?)
 Plug 'roxma/nvim-yarp'
 " Awesome completion
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'commit': '967f8b4a6ff77b446693583d3220b012edc6794b' }
 " Deoplete source for Ruby
 Plug 'Shougo/deoplete-rct'
 " Completion based on language syntax highlighting
