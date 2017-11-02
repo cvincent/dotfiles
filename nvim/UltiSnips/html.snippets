@@ -1,0 +1,33 @@
+snippet t "Generic tag" b!
+<${1:div}${2: ${3:id="${4:id}" ${5:class="${6:class}"}}}>
+	$0
+</div>
+endsnippet
+
+snippet div "Div element" b!
+<div>
+	$0
+</div>
+endsnippet
+
+snippet divc "Div element with class" b!
+<div class="${1:class-here}">
+	$0
+</div>
+endsnippet
+
+snippet divi "Div element with id" b!
+<div id="${1:id-here}">
+	$0
+</div>
+endsnippet
+
+snippet divic "Div element with id and class" b!
+<div id="${1:id-here}" class="${2:class-here}">
+	$0
+</div>
+endsnippet
+
+# snippet - "Mustache/Handlebars" b!
+# {{$0}}
+# endsnippet
