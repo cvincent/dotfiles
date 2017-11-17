@@ -156,6 +156,8 @@ set backspace=indent,eol,start
 
 " Syntax highlighting
 syntax on
+" Highlight current line
+set cursorline
 
 " Start searching while typing
 set incsearch
