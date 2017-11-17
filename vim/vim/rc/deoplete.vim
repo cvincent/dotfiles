@@ -1,7 +1,7 @@
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#complete_method = 'omnifunc'
 let g:deoplete#enable_smart_case = 1
-let g:deoplete#auto_complete_start_length = 3
+let g:deoplete#auto_complete_start_length = 2
 let g:deoplete#max_list = 10
 let g:deoplete#auto_complete_delay = 1
 
