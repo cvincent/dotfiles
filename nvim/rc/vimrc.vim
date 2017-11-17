@@ -10,5 +10,5 @@ endif
 
 " Easily edit vimrc and re-source
 noremap <Leader>v :tabedit ~/.config/nvim/init.vim<CR>
-noremap <Leader>rv :tabedit ~/.vim/rc<CR>
+noremap <Leader>rv :tabedit ~/.dotfiles/nvim/rc<CR>
 autocmd! BufWritePost init.vim call ReloadVimRc()
