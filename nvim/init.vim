@@ -40,6 +40,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'vim-scripts/AutoClose'
 " Easily un/comment code
 Plug 'tpope/vim-commentary'
+" Send commands to tmux
+Plug 'jgdavey/tslime.vim'
 " RSpec launcher
 Plug 'thoughtbot/vim-rspec'
 " Dot-repeat for plugins
@@ -80,6 +82,8 @@ Plug 'yssl/QFEnter'
 Plug 'tpope/vim-obsession'
 " Crystal support
 Plug 'rhysd/vim-crystal'
+" Brightscript (Roku) support
+Plug 'chooh/brightscript.vim'
 
 " Stuff I used to use maybe...
 " " Lisp editing
