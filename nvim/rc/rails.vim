@@ -45,3 +45,8 @@ let g:rails_projections = {
       \     "test": "spec/serializers/%s_serializer_spec.rb"
       \   }
       \ }
+
+au User Rails nmap <leader>rdm :call Send_to_Tmux("bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test; say migrations completed\n")<CR>
+au User Rails nmap <leader>rdr :call Send_to_Tmux("bundle exec rake db:rollback; bundle exec rake db:rollback RAILS_ENV=test; say rollback completed\n")<CR>
+au User Rails nmap <leader>rb :call Send_to_Tmux("bundle install --path=vendor; say bundler completed\n")<CR>
+

@@ -84,6 +84,12 @@ Plug 'tpope/vim-obsession'
 Plug 'rhysd/vim-crystal'
 " Brightscript (Roku) support
 Plug 'chooh/brightscript.vim'
+" Inline syntax support
+Plug 'Shougo/context_filetype.vim'
+" Better Ruby heredoc support, with inline syntax
+Plug 'joker1007/vim-ruby-heredoc-syntax'
+" CoffeeScript support (vim-ruby-heredoc-syntax expects it)
+Plug 'kchmck/vim-coffee-script'
 
 " Stuff I used to use maybe...
 " " Lisp editing
@@ -98,8 +104,6 @@ Plug 'chooh/brightscript.vim'
 " " Support for stupid Slim templates; use branch which still supports embedded
 " " syntax highlighting (for Coffee/JavaScript)
 " Plug 'DAddYE/vim-slim'
-" " CoffeeScript support
-" Plug 'kchmck/vim-coffee-script'
 " " Support for Handlebars and Mustache templates
 " Plug 'mustache/vim-mustache-handlebars'
 " " Text object for indent levels
@@ -138,6 +142,9 @@ set matchpairs+=<:>
 " Expected ex command completion behavior
 set wildmenu
 set wildmode=list:longest
+
+" Case insensitive ex command file completion
+set wildignorecase
 
 " Case-sensitive only if pattern includes an uppercase letter
 set ignorecase
