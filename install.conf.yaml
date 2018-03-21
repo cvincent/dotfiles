@@ -5,7 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.config/fish/config.fish: fish
+    ~/.config/fish/config.fish:
+      create: true
+      path: fish
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
     ~/.gvimrc: vim/gvimrc
@@ -16,9 +18,15 @@
     ~/.irbrc: irbrc
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
-    ~/.config/nvim/init.vim: nvim/init.vim
-    ~/.config/nvim/rc: nvim/rc
-    ~/.config/nvim/UltiSnips: nvim/UltiSnips
+    ~/.config/nvim/init.vim:
+      create: true
+      path: nvim/init.vim
+    ~/.config/nvim/rc:
+      create: true
+      path: nvim/rc
+    ~/.config/nvim/UltiSnips:
+      create: true
+      path: nvim/UltiSnips
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
