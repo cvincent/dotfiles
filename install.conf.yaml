@@ -5,6 +5,7 @@
 - clean: ['~']
 
 - link:
+    ~/.config/bash_profile: bash_profile
     ~/.config/fish/config.fish:
       create: true
       path: fish
