@@ -3,6 +3,7 @@
 
 Session.vim
 .projections.json
+config/projections.json
 
 bin/boilerplate
 bin/devmode
