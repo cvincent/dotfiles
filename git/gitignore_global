@@ -2,6 +2,7 @@
 .irb-history
 
 Session.vim
+.projections.json
 
 bin/boilerplate
 bin/devmode
