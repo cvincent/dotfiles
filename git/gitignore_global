@@ -1,6 +1,7 @@
 .DS_Store
 .irb-history
 
+.nvimrc
 Session.vim
 .projections.json
 config/projections.json
