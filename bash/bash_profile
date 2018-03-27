@@ -30,10 +30,6 @@ export EDITOR="/usr/local/bin/nvim"
 # Keyboardio
 export SKETCHBOOK_DIR=$HOME/Documents/Arduino
 
-# Word-movement bindings
-bind '"\e[1;5D":backward-word'
-bind '"\e[1;5C":forward-word'
-
 # Easily start and kill tmuxinator
 alias tstart="tmuxinator start "
 alias tkill="stop-services; tmux kill-session"
