@@ -91,27 +91,12 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'
 " CoffeeScript support (vim-ruby-heredoc-syntax expects it)
 Plug 'kchmck/vim-coffee-script'
 
-" Stuff I used to use maybe...
-" " Lisp editing
-" Plug 'guns/vim-sexp'
-" Plug 'tpope/vim-sexp-mappings-for-regular-people'
-" Plug 'oblitum/rainbow'
-" Plug 'tpope/vim-fireplace'
 " " Fuzzy file finder
 " Plug 'kien/ctrlp.vim'
 " " Move buffers between windows
 " Plug 'wesQ3/vim-windowswap'
-" " Support for stupid Slim templates; use branch which still supports embedded
-" " syntax highlighting (for Coffee/JavaScript)
-" Plug 'DAddYE/vim-slim'
-" " Support for Handlebars and Mustache templates
-" Plug 'mustache/vim-mustache-handlebars'
 " " Text object for indent levels
 " Plug 'michaeljsmith/vim-indent-object'
-" " Support for editing Salt SLS files
-" Plug 'saltstack/salt-vim'
-" " Support for CJSX syntax
-" " Plugin 'mtscout6/vim-cjsx'
 " " Alignments
 " Plug 'junegunn/vim-easy-align'
 
