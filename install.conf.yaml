@@ -20,6 +20,9 @@
     ~/.irbrc: irbrc
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
+    ~/.config/tmuxinator:
+      create: true
+      path: tmuxinator
     ~/.config/nvim/init.vim:
       create: true
       path: nvim/init.vim
