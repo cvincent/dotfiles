@@ -1,6 +1,12 @@
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <C-T> :pop<CR>
-nmap <F7> :checkt<CR> " Reload all files, for example after switching Git branches
-imap <C-C> <Esc> " Default Ctrl-C behavior isn't quite the same as Esc; fix that
-cmap <M-C-H> <C-W> " Option-Del support for command-line mode
+
+" Reload all files, for example after switching Git branches
+nmap <F7> :checkt<CR>
+
+" Default Ctrl-C behavior isn't quite the same as Esc; fix that
+imap <C-C> <Esc>
+
+" Option-Del support for command-line mode
+cmap <M-C-H> <C-W>

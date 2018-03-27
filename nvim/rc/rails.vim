@@ -5,10 +5,8 @@ let g:rails_projections = {
       \   "config/application.rb": {
       \     "command": "app",
       \   },
-      \   "app/util/*.rb": {
-      \     "command": "util",
-      \     "template": "class %S\nend",
-      \     "test": "spec/util/%s_spec.rb"
+      \   "spec/factories/*.rb": {
+      \     "command": "factory",
       \   },
       \   "app/lib/*.rb": {
       \     "command": "alib",
@@ -23,16 +21,6 @@ let g:rails_projections = {
       \   "app/admin/*.rb": {
       \     "command": "admin",
       \     "template": "ActiveAdmin.register {camelcase|singular|capitalize} do\n\nend"
-      \   },
-      \   "app/authorizers/*_authorizer.rb": {
-      \     "command": "authorizer",
-      \     "template": "class %SAuthorizer < ApplicationAuthorizer\n  \nend",
-      \     "test": "spec/authorizers/%s_authorizer_spec.rb"
-      \   },
-      \   "app/hooks/*_hook.rb": {
-      \     "command": "hook",
-      \     "template": "class %SHook\nend",
-      \     "test": "spec/hooks/%s_hook_spec.rb"
       \   },
       \   "app/services/*.rb": {
       \     "command": "service",
