@@ -20,15 +20,20 @@ alias ll="ls -la"
 alias ..="cd .."
 
 alias be="bundle exec "
+alias rg="bundle exec rails generate "
+alias rd="bundle exec rails destroy "
+alias alert="say done"
+alias so="source ~/.bash_profile"
 
 export EDITOR="/usr/local/bin/nvim"
 
 # Keyboardio
 export SKETCHBOOK_DIR=$HOME/Documents/Arduino
 
-# Nvim wants to know
-export TERM=iterm2
-
 # Word-movement bindings
 bind '"\e[1;5D":backward-word'
 bind '"\e[1;5C":forward-word'
+
+# Easily start and kill tmuxinator
+alias tstart="tmuxinator start "
+alias tkill="stop-services; tmux kill-session"
