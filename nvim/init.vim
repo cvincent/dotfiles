@@ -41,7 +41,7 @@ Plug 'vim-scripts/AutoClose'
 " Easily un/comment code
 Plug 'tpope/vim-commentary'
 " Send commands to tmux
-Plug 'jgdavey/tslime.vim'
+Plug 'cvincent/tslime.vim'
 " RSpec launcher
 Plug 'thoughtbot/vim-rspec'
 " Dot-repeat for plugins
@@ -90,6 +90,8 @@ Plug 'Shougo/context_filetype.vim'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
 " CoffeeScript support (vim-ruby-heredoc-syntax expects it)
 Plug 'kchmck/vim-coffee-script'
+" Vim debug tools
+Plug 'tpope/vim-scriptease'
 
 " " Fuzzy file finder
 " Plug 'kien/ctrlp.vim'
