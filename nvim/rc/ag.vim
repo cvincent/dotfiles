@@ -1,2 +1,2 @@
-" Leader-f for Ag
-map <leader>f :Ag!<space>
+" Leader-fp for Ag
+map <leader>fp :Ag!<space>

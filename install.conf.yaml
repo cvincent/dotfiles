@@ -6,6 +6,7 @@
 
 - link:
     ~/.bash_profile: bash/bash_profile
+    ~/.bash_secret: bash/bash_secret
     ~/.inputrc: bash/inputrc
     ~/.config/fish/config.fish:
       create: true

@@ -10,3 +10,11 @@ imap <C-C> <Esc>
 
 " Option-Del support for command-line mode
 cmap <M-C-H> <C-W>
+
+" File stuff
+nmap <Leader>fm :Move 
+nmap <Leader>ffm :Move <C-R>=expand('%')<CR>
+nmap <Leader>fu :Unlink<CR>
+
+" Keep windows equal
+set equalalways

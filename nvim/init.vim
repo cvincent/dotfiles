@@ -4,12 +4,11 @@ call plug#begin('~/.config/nvim/plugged')
 " Dependency for deoplete (and others?)
 Plug 'roxma/nvim-yarp'
 " Awesome completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'commit': '967f8b4a6ff77b446693583d3220b012edc6794b' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Deoplete source for Ruby
-Plug 'Shougo/deoplete-rct'
+Plug 'cvincent/deoplete-solargraph'
 " Completion based on language syntax highlighting
 Plug 'Shougo/neco-syntax'
-
 " Awesome theme
 Plug 'iCyMind/NeoSolarized'
 " Nicer file navigation
@@ -166,7 +165,7 @@ set listchars=tab:>-,trail:·
 nmap <silent> <leader>l :set nolist!<CR>
 
 " Shorten various Vim messages
-set shortmess=atI
+set shortmess=atIO
 
 " UTF-8 all the things
 scriptencoding utf-8

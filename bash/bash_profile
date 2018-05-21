@@ -4,8 +4,6 @@ if [ -f /etc/profile ]; then
   source /etc/profile
 fi
 
-PATH=./bin:~/bin:$PATH
-
 HISTSIZE=10000
 HISTFILESIZE=10000
 
@@ -14,6 +12,8 @@ eval "$(rbenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+PATH=./bin:~/bin:$PATH
 
 alias l="ls -l"
 alias ll="ls -la"
@@ -24,6 +24,7 @@ alias rg="bundle exec rails generate "
 alias rd="bundle exec rails destroy "
 alias alert="say done"
 alias so="source ~/.bash_profile"
+alias pss="ps ax | grep -v grep | grep "
 
 export EDITOR="/usr/local/bin/nvim"
 
@@ -33,3 +34,7 @@ export SKETCHBOOK_DIR=$HOME/Documents/Arduino
 # Easily start and kill tmuxinator
 alias tstart="tmuxinator start "
 alias tkill="stop-services; tmux kill-session"
+
+source /Users/cvincent/.pgvm/pgvm_env
+
+source /Users/cvincent/.bash_secret
