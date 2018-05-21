@@ -27,6 +27,7 @@ alias so="source ~/.bash_profile"
 alias pss="ps ax | grep -v grep | grep "
 
 export EDITOR="/usr/local/bin/nvim"
+export GPG_TTY=`tty`
 
 # Keyboardio
 export SKETCHBOOK_DIR=$HOME/Documents/Arduino
