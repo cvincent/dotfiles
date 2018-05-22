@@ -8,6 +8,8 @@ Plug 'roxma/nvim-completion-manager'
 Plug 'roxma/ncm-rct-complete'
 " Pull words from other buffers for completion
 Plug 'fgrsnau/ncm-otherbuf'
+" Tags manager
+Plug 'ludovicchabant/vim-gutentags'
 " Awesome theme
 Plug 'iCyMind/NeoSolarized'
 " Nicer file navigation

@@ -3,5 +3,9 @@ set statusline=%{fnamemodify(getcwd(),':t')}
 set statusline+=\ →\ 
 set statusline+=%f
 set statusline+=%m
+set statusline+=\ 
+set statusline+=(%l,\ %c)
 set statusline+=%=
+set statusline+=%{gutentags#statusline('[',']')}
+set statusline+=\ 
 set statusline+=%{fugitive#statusline()}
