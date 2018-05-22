@@ -6,6 +6,8 @@ Plug 'roxma/nvim-completion-manager'
 " RCT Ruby completion source...works great if everything is in one file :P
 " It does provide language stuff though
 Plug 'roxma/ncm-rct-complete'
+" Pull words from other buffers for completion
+Plug 'fgrsnau/ncm-otherbuf'
 " Awesome theme
 Plug 'iCyMind/NeoSolarized'
 " Nicer file navigation
