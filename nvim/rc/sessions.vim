@@ -4,4 +4,4 @@ set sessionoptions-=winpos
 set sessionoptions+=resize
 set sessionoptions-=buffers
 set sessionoptions+=blank
-set sessionoptions+=localoptions
+" set sessionoptions+=localoptions
