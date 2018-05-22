@@ -1,14 +1,11 @@
 filetype off
 call plug#begin('~/.config/nvim/plugged')
 
-" Dependency for deoplete (and others?)
-Plug 'roxma/nvim-yarp'
-" Awesome completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Deoplete source for Ruby
-Plug 'cvincent/deoplete-solargraph'
-" Completion based on language syntax highlighting
-Plug 'Shougo/neco-syntax'
+" Completion framework
+Plug 'roxma/nvim-completion-manager'
+" RCT Ruby completion source...works great if everything is in one file :P
+" It does provide language stuff though
+Plug 'roxma/ncm-rct-complete'
 " Awesome theme
 Plug 'iCyMind/NeoSolarized'
 " Nicer file navigation
@@ -63,8 +60,6 @@ Plug 'slashmili/alchemist.vim'
 Plug 'avdgaag/vim-phoenix'
 " Modern JavaScript support
 Plug 'pangloss/vim-javascript'
-" " More JavaScript support
-" Plug 'ternjs/tern_for_vim'
 " JSX support
 Plug 'mxw/vim-jsx'
 " Automatically add end and such
@@ -83,7 +78,7 @@ Plug 'tpope/vim-obsession'
 Plug 'rhysd/vim-crystal'
 " Brightscript (Roku) support
 Plug 'chooh/brightscript.vim'
-" Inline syntax support
+" Inline syntax support; vim-ruby-heredoc-syntax depends on this
 Plug 'Shougo/context_filetype.vim'
 " Better Ruby heredoc support, with inline syntax
 Plug 'joker1007/vim-ruby-heredoc-syntax'
@@ -217,7 +212,7 @@ set nowrap
 set scroll=10
 
 " Always show status line
-set laststatus=2
+set laststatus=1
 
 " Dark Solarized
 " set termguicolors
