@@ -7,3 +7,4 @@ au BufNewFile,BufRead *.jpbuilder set ft=ruby
 
 " Preferrable indentation for common @var ||= begin/if/etc
 let g:ruby_indent_assignment_style = 'variable'
+

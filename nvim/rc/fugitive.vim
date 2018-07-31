@@ -24,3 +24,6 @@ silent! nnoremap <Leader>gpu :call PushToCurrentBranch()<CR>
 silent! nnoremap <Leader>gb :Git checkout -b 
 
 au FileType gitcommit nmap <buffer> <Leader>w :wq<CR>
+
+" Opt out of running in NeoVim terminal emulator
+let g:fugitive_force_bang_command = 1

@@ -28,6 +28,7 @@ alias pss="ps ax | grep -v grep | grep "
 
 export EDITOR="/usr/local/bin/nvim"
 export GPG_TTY=`tty`
+export RAILS_SYSTEM_TESTING_SCREENSHOT=inline
 
 # Keyboardio
 export SKETCHBOOK_DIR=$HOME/Documents/Arduino
@@ -39,3 +40,5 @@ alias tkill="stop-services; tmux kill-session"
 source /Users/cvincent/.pgvm/pgvm_env
 
 source /Users/cvincent/.bash_secret
+
+export PATH="$HOME/.cargo/bin:$PATH"

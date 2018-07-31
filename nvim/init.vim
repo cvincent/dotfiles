@@ -1,17 +1,31 @@
 filetype off
 call plug#begin('~/.config/nvim/plugged')
 
-" Completion framework
-Plug 'roxma/nvim-completion-manager'
-" RCT Ruby completion source...works great if everything is in one file :P
-" It does provide language stuff though
-Plug 'roxma/ncm-rct-complete'
-" Pull words from other buffers for completion
-Plug 'fgrsnau/ncm-otherbuf'
+" ncm2 completion framework
+Plug 'ncm2/ncm2'
+" Remote plugins; dependency for ncm2
+Plug 'roxma/nvim-yarp'
+" Buffer completion
+Plug 'ncm2/ncm2-bufword'
+" Path completion; disabled for now, annoying more often than useful
+" Plug 'ncm2/ncm2-path'
+" Tag completion
+Plug 'ncm2/ncm2-tagprefix'
+" LanguageClient support
+" Not using for now; Solargraph needs work
+" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+
+" Nice status line
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Syntax checking and linting
+Plug 'w0rp/ale'
 " Tags manager
 Plug 'ludovicchabant/vim-gutentags'
 " Awesome theme
 Plug 'iCyMind/NeoSolarized'
+" Auto-indent on put
+Plug 'sickill/vim-pasta'
 " Nicer file navigation
 Plug 'tpope/vim-vinegar'
 " Dependency for vim-notes:
