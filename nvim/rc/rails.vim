@@ -34,7 +34,7 @@ let g:rails_projections = {
       \   }
       \ }
 
-au User Rails nmap <leader>rdm :call Send_to_Tmux("rake db:migrate; say migrations completed\n")<CR>
-au User Rails nmap <leader>rdr :call Send_to_Tmux("rake db:rollback; say rollback completed\n")<CR>
-au User Rails nmap <leader>rc :call Send_to_Tmux("rubocop app; say rubocop completed\n")<CR>
-au User Rails nmap <leader>rb :call Send_to_Tmux("bundle install --path=vendor; say bundler completed\n")<CR>
+au User Rails nmap <leader>rdm :call ToTmux("rake db:migrate; say migrations completed")<CR>
+au User Rails nmap <leader>rdr :call ToTmux("rake db:rollback; say rollback completed")<CR>
+au User Rails nmap <leader>rc :call ToTmux("rubocop app; say rubocop completed")<CR>
+au User Rails nmap <leader>rb :call ToTmux("bundle install --path=vendor; say bundler completed")<CR>
