@@ -22,3 +22,6 @@ set equalalways
 " Fast ex
 nnoremap <return> :
 vnoremap <return> :
+
+" Copy to end of line with Y
+nmap Y y$
