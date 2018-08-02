@@ -79,9 +79,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>735 758 796 473 0 0 2560 1440 </string>
+	<string>735 810 796 473 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1680 390 1680 1050 -1680 390 1680 1050 </string>
+	<string>0 0 2560 1440 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1111 835 570 426 -1680 390 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -5130,6 +5130,8 @@
 	<string></string>
 	<key>PasteSpecialUseRegexSubstitution</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
