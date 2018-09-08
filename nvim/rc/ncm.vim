@@ -1,7 +1,8 @@
 autocmd BufEnter * call ncm2#enable_for_buffer()
-autocmd TextChangedI <buffer> call ncm2#auto_trigger()
+" autocmd TextChangedI <buffer> call ncm2#auto_trigger()
 set completeopt=noinsert,menuone,noselect
-set lazyredraw
+" set lazyredraw
+let ncm2#popup_delay = 250
 
 " Suppress annoying match messages
 set shortmess+=c

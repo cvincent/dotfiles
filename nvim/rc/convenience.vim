@@ -8,8 +8,9 @@ nmap <F7> :checkt<CR>
 " Default Ctrl-C behavior isn't quite the same as Esc; fix that
 inoremap <C-C> <Esc>
 
-" Option-Del support for command-line mode
-cmap <M-C-H> <C-W>
+" Alt-Del support for insert and command modes
+" imap <M-BS> <C-W>
+cmap <M-BS> <C-W>
 
 " File stuff
 nmap <Leader>fm :Move 

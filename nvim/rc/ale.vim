@@ -9,6 +9,11 @@ nmap <silent> <Leader>an <Plug>(ale_next_wrap)
 nmap <silent> <Leader>ap <Plug>(ale_previous_wrap)
 
 hi! SignColumn ctermbg=black
+hi! ALEInfo cterm=none
+hi! ALEWarning cterm=none
+hi! ALEError cterm=none
+hi! ALEStyleWarning cterm=none
+hi! ALEStyleError cterm=none
 
 let g:cur_status_bg = ''
 

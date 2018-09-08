@@ -8,7 +8,7 @@ Plug 'roxma/nvim-yarp'
 " Buffer completion
 Plug 'ncm2/ncm2-bufword'
 " Path completion; disabled for now, annoying more often than useful
-" Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-path'
 " Tag completion
 Plug 'ncm2/ncm2-tagprefix'
 " LanguageClient support
@@ -95,7 +95,7 @@ Plug 'tpope/vim-obsession'
 " Crystal support
 Plug 'rhysd/vim-crystal'
 " Brightscript (Roku) support
-Plug 'chooh/brightscript.vim'
+" Plug 'chooh/brightscript.vim'
 " Inline syntax support; vim-ruby-heredoc-syntax depends on this
 Plug 'Shougo/context_filetype.vim'
 " Better Ruby heredoc support, with inline syntax
@@ -104,6 +104,8 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'kchmck/vim-coffee-script'
 " Vim debug tools
 Plug 'tpope/vim-scriptease'
+" For editing non-code
+Plug 'junegunn/goyo.vim'
 
 " " Fuzzy file finder
 " Plug 'kien/ctrlp.vim'

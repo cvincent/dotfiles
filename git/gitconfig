@@ -2,12 +2,13 @@
 	name = Chris Vincent
 	email = c.j.vincent@gmail.com
 [credential]
-	helper = osxkeychain
+	helper = cache
 [init]
 	templatedir = ~/.git_template
 [alias]
 	ctags = !.git/hooks/ctags
 [core]
+	pager = diff-so-fancy | less --tabs=2 -RFX
 	excludesfile = /Users/cvincent/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean %f

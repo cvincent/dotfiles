@@ -1,19 +1,33 @@
 # Prevent tmux from screwing up my PATH
-if [ -f /etc/profile ]; then
-  PATH=""
-  source /etc/profile
-fi
+# if [ -f /etc/profile ]; then
+#   PATH=""
+#   source /etc/profile
+# fi
 
-HISTSIZE=10000
-HISTFILESIZE=10000
+########################
+### VERSION MANAGERS ###
+########################
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+source /home/redplateaus/.pgvm/pgvm_env
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-PATH=./bin:~/bin:$PATH
+
+############
+### PATH ###
+############
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/arduino:$PATH"
+export PATH="./bin:$HOME/bin:$PATH"
+
+###############
+### ALIASES ###
+###############
 
 alias l="ls -l"
 alias ll="ls -la"
@@ -26,19 +40,68 @@ alias alert="say done"
 alias so="source ~/.bash_profile"
 alias pss="ps ax | grep -v grep | grep "
 
-export EDITOR="/usr/local/bin/nvim"
-export GPG_TTY=`tty`
-export RAILS_SYSTEM_TESTING_SCREENSHOT=inline
+alias agi="sudo apt-get install -y "
 
-# Keyboardio
-export SKETCHBOOK_DIR=$HOME/Documents/Arduino
+alias xbanish="~/vendor/xbanish/xbanish"
 
 # Easily start and kill tmuxinator
-alias tstart="tmuxinator start "
-alias tkill="stop-services; tmux kill-session"
+# alias tstart="tmuxinator start "
+# alias tkill="stop-services; tmux kill-session"
 
-source /Users/cvincent/.pgvm/pgvm_env
+####################
+### KEY BINDINGS ###
+####################
 
-source /Users/cvincent/.bash_secret
+# Use the same sequence Alacritty defaults to and Vim expects for
+# backward/forward-word
 
-export PATH="$HOME/.cargo/bin:$PATH"
+bind '"\e[1;5D": backward-word'
+bind '"\e[1;5C": forward-word'
+
+################
+### SETTINGS ###
+################
+
+HISTSIZE=100000
+HISTFILESIZE=100000
+
+# Don't put duplicate lines or lines starting with space in the history
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
+###########
+### ENV ###
+###########
+
+export EDITOR="/usr/bin/nvim"
+export GPG_TTY=`tty`
+
+export RAILS_SYSTEM_TESTING_SCREENSHOT=inline
+export ARDUINO_PATH=/usr/local/arduino
+
+export WS_BROWSE=$(xrdb -query | grep i3.Workspaces.wsBrowse | cut -f2)
+export WS_WORK=$(xrdb -query | grep i3.Workspaces.wsWork | cut -f2)
+export WS_TMUX=$(xrdb -query | grep i3.Workspaces.wsTmux | cut -f2)
+export WS_NVIM=$(xrdb -query | grep i3.Workspaces.wsNvim | cut -f2)
+export WS_COMM=$(xrdb -query | grep i3.Workspaces.wsComm | cut -f2)
+
+###################
+### STATUS LINE ###
+###################
+
+function _update_ps1() {
+  PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+  PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+###############
+### SECRETS ###
+###############
+
+# Stuff that's not checked into dotfiles
+source "$HOME/.bash_secret"
