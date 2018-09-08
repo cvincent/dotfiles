@@ -6,7 +6,6 @@
 
 - link:
     ~/.bash_profile: bash/bash_profile
-    ~/.bash_secret: bash/bash_secret
     ~/.inputrc: bash/inputrc
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
