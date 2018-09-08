@@ -22,9 +22,6 @@
     ~/.config/fish/config.fish:
       create: true
       path: fish
-    ~/.config/tmuxinator:
-      create: true
-      path: tmuxinator
     ~/.config/nvim/init.vim:
       create: true
       path: nvim/init.vim
@@ -35,13 +32,13 @@
       create: true
       path: nvim/UltiSnips
     ~/.mbsyncrc: mbsyncrc
-    ~/.config/ranger: ranger
+    ~/.config/ranger:
       create: true
       path: ranger
-    ~/.config/powerline-shell: powerline-shell
+    ~/.config/powerline-shell:
       create: true
       path: powerline-shell
-    ~/.config/mutt: mutt
+    ~/.config/mutt:
       create: true
       path: mutt
     ~/.config/kitty/kitty.conf:
@@ -50,7 +47,7 @@
     ~/.config/i3/config:
       create: true
       path: i3.conf
-    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/alacritty/alacritty.yml:
       create: true
       path: alacritty.yml
 
