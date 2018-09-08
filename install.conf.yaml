@@ -39,6 +39,9 @@
     ~/.config/nvim/UltiSnips:
       create: true
       path: nvim/UltiSnips
+    ~/.i3blocks.conf: i3blocks.conf
+    ~/.compton.conf: compton.conf
+    ~/.mbsyncrc: mbsyncrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

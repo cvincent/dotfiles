@@ -1,13 +1,13 @@
-set from = "c.j.vincent@protonmail.com"
+set from = "xxx@protonmail.com"
 set spoolfile = "+protonmail/Inbox"
 set copy = no
 unset trash
 
-set smtp_url = "smtp://c.j.vincent@protonmail.com:$my_protonmail_pass@127.0.0.1:1025/"
+set smtp_url = "smtp://xxx@protonmail.com:$my_protonmail_pass@127.0.0.1:1025/"
 set ssl_force_tls = yes
 set ssl_starttls = yes
 
-set imap_user = "c.j.vincent@protonmail.com"
+set imap_user = "xxx@protonmail.com"
 set imap_pass = $my_protonmail_pass
 
 macro index,pager gi "<change-folder>+protonmail/Inbox<enter>" "go to Inbox"

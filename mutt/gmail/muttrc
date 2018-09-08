@@ -1,9 +1,9 @@
-set from = "c.j.vincent@gmail.com"
+set from = "xxx@gmail.com"
 set spoolfile = "+gmail/Inbox"
 set copy = no
 unset trash
 
-set smtp_url = "smtps://c.j.vincent@gmail.com@smtp.gmail.com:465/"
+set smtp_url = "smtps://xxx@gmail.com@smtp.gmail.com:465/"
 set smtp_pass = $my_gmail_pass
 set ssl_force_tls = yes
 
