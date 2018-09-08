@@ -1,0 +1,77 @@
+#############
+### GMAIL ###
+#############
+
+IMAPAccount gmail
+Host imap.gmail.com
+User xxx
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d /home/redplateaus/.config/mutt/gmail/creds.gpg"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.mail/gmail/
+Inbox ~/.mail/gmail/Inbox
+
+Channel gmail
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/All Mail"
+Create Both
+SyncState *
+
+############
+### BOON ###
+############
+
+IMAPAccount boon
+Host imap.gmail.com
+User xxx
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d /home/redplateaus/.config/mutt/boon/creds.gpg"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore boon-remote
+Account boon
+
+MaildirStore boon-local
+Subfolders Verbatim
+Path ~/.mail/boon/
+Inbox ~/.mail/boon/Inbox
+
+Channel boon
+Master :boon-remote:
+Slave :boon-local:
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/All Mail"
+Create Both
+SyncState *
+
+##################
+### PROTONMAIL ###
+##################
+
+IMAPAccount protonmail
+Host 127.0.0.1
+Port 1143
+User xxx
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d /home/redplateaus/.config/mutt/protonmail/creds.gpg"
+SSLType NONE
+
+IMAPStore protonmail-remote
+Account protonmail
+
+MaildirStore protonmail-local
+Subfolders Verbatim
+Path ~/.mail/protonmail/
+Inbox ~/.mail/protonmail/Inbox
+
+Channel protonmail
+Master :protonmail-remote:
+Slave :protonmail-local:
+Patterns * !"Drafts" !"All Mail"
+Create Both
+SyncState *
