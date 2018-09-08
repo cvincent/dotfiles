@@ -5,18 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.config/ranger: ranger
-    ~/.config/powerline-shell: powerline-shell
-    ~/.config/mutt: mutt
-    ~/.config/kitty/kitty.conf: kitty.conf
-    ~/.config/i3/config: i3.conf
-    ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.bash_profile: bash/bash_profile
     ~/.bash_secret: bash/bash_secret
     ~/.inputrc: bash/inputrc
-    ~/.config/fish/config.fish:
-      create: true
-      path: fish
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
     ~/.gvimrc: vim/gvimrc
@@ -27,6 +18,11 @@
     ~/.irbrc: irbrc
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
+    ~/.i3blocks.conf: i3blocks.conf
+    ~/.compton.conf: compton.conf
+    ~/.config/fish/config.fish:
+      create: true
+      path: fish
     ~/.config/tmuxinator:
       create: true
       path: tmuxinator
@@ -39,9 +35,25 @@
     ~/.config/nvim/UltiSnips:
       create: true
       path: nvim/UltiSnips
-    ~/.i3blocks.conf: i3blocks.conf
-    ~/.compton.conf: compton.conf
     ~/.mbsyncrc: mbsyncrc
+    ~/.config/ranger: ranger
+      create: true
+      path: ranger
+    ~/.config/powerline-shell: powerline-shell
+      create: true
+      path: powerline-shell
+    ~/.config/mutt: mutt
+      create: true
+      path: mutt
+    ~/.config/kitty/kitty.conf:
+      create: true
+      path: kitty.conf
+    ~/.config/i3/config:
+      create: true
+      path: i3.conf
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
+      create: true
+      path: alacritty.yml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
