@@ -1,0 +1,20 @@
+set sidebar_visible
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/? %?S?%S?'
+set mail_check_stats
+set sidebar_divider_char = "║"
+set sidebar_short_path = yes
+set sidebar_folder_indent = yes
+
+mailboxes \
+  "ProtonMail" \
+  "+protonmail/Inbox" \
+  "+protonmail/Archive" \
+  "+protonmail/Sent" \
+  "Gmail" \
+  "+gmail/Inbox" \
+  "+gmail/[Gmail]/All Mail" \
+  "+gmail/[Gmail]/Sent Mail" \
+  "Boon Media" \
+  "+boon/Inbox" \
+  "+boon/[Gmail]/All Mail" \
+  "+boon/[Gmail]/Sent Mail"
