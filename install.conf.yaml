@@ -19,6 +19,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.i3blocks.conf: i3blocks.conf
     ~/.compton.conf: compton.conf
+    ~/.Xmodmap: Xmodmap
     ~/.config/fish/config.fish:
       create: true
       path: fish

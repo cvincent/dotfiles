@@ -14,8 +14,8 @@ Account gmail
 
 MaildirStore gmail-local
 Subfolders Verbatim
-Path ~/.mail/gmail/
-Inbox ~/.mail/gmail/Inbox
+Path /media/redplateaus/ExtraDrive1/mail/gmail/
+Inbox /media/redplateaus/ExtraDrive1/mail/gmail/Inbox
 
 Channel gmail
 Master :gmail-remote:
@@ -40,8 +40,8 @@ Account boon
 
 MaildirStore boon-local
 Subfolders Verbatim
-Path ~/.mail/boon/
-Inbox ~/.mail/boon/Inbox
+Path /media/redplateaus/ExtraDrive1/mail/boon/
+Inbox /media/redplateaus/ExtraDrive1/mail/boon/Inbox
 
 Channel boon
 Master :boon-remote:
@@ -66,8 +66,8 @@ Account protonmail
 
 MaildirStore protonmail-local
 Subfolders Verbatim
-Path ~/.mail/protonmail/
-Inbox ~/.mail/protonmail/Inbox
+Path /media/redplateaus/ExtraDrive1/mail/protonmail/
+Inbox /media/redplateaus/ExtraDrive1/mail/protonmail/Inbox
 
 Channel protonmail
 Master :protonmail-remote:
