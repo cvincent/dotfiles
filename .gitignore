@@ -6,3 +6,6 @@ tmuxinator/*
 tags
 Session.vim
 *.gpg
+ranger/bookmarks
+ranger/history
+ranger/tagged
