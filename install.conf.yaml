@@ -19,7 +19,11 @@
     ~/.tmux.conf: tmux.conf
     ~/.i3blocks.conf: i3blocks.conf
     ~/.compton.conf: compton.conf
+    ~/.mbsyncrc: mbsyncrc
     ~/.Xmodmap: Xmodmap
+    ~/.config/qutebrowser/config.py:
+      create: true
+      path: qutebrowser.py
     ~/.config/fish/config.fish:
       create: true
       path: fish
