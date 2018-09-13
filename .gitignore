@@ -5,3 +5,4 @@ vim/vim/sessions
 tmuxinator/*
 tags
 Session.vim
+*.gpg
