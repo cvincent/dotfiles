@@ -1,13 +1,13 @@
-set from = "xxx@protonmail.com"
+set from = $my_protonmail_email
 set spoolfile = "+protonmail/Inbox"
 set copy = no
 unset trash
 
-set smtp_url = "smtp://xxx@protonmail.com:$my_protonmail_pass@127.0.0.1:1025/"
+set smtp_url = "smtp://$my_protonmail_email:$my_protonmail_pass@127.0.0.1:1025/"
 set ssl_force_tls = yes
 set ssl_starttls = yes
 
-set imap_user = "xxx@protonmail.com"
+set imap_user = $my_protonmail_email
 set imap_pass = $my_protonmail_pass
 
 macro index,pager gi "<change-folder>+protonmail/Inbox<enter>" "go to Inbox"
@@ -15,3 +15,4 @@ macro index,pager ga "<change-folder>+protonmail/Archive<enter>" "go to Archive"
 macro index,pager gs "<change-folder>+protonmail/Sent<enter>" "go to Sent"
 
 macro index,pager A ":set confirmappend=no delete=yes\n<tag-prefix><save-message>=Archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+macro index,pager D "<delete-message><enter>"

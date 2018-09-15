@@ -1,9 +1,9 @@
-set from = "xxx"
+set from = $my_boon_email
 set spoolfile = "+boon/Inbox"
 set copy = no
 unset trash
 
-set smtp_url = "smtps://xxx@smtp.gmail.com:465/"
+set smtp_url = "smtps://$my_boon_email@smtp.gmail.com:465/"
 set smtp_pass = $my_boon_pass
 set ssl_force_tls = yes
 
