@@ -13,7 +13,6 @@ bind index,pager d half-down
 bind index,pager u half-up
 
 macro index,pager gp "<change-folder>+protonmail/Inbox<enter>" "go to ProtonMail"
-macro index,pager gm "<change-folder>+gmail/Inbox<enter>" "go to Gmail"
 macro index,pager gb "<change-folder>+boon/Inbox<enter>" "go to Boon"
 
 bind index gg first-entry

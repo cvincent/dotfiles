@@ -10,10 +10,6 @@ mailboxes \
   "+protonmail/Inbox" \
   "+protonmail/Archive" \
   "+protonmail/Sent" \
-  "Gmail" \
-  "+gmail/Inbox" \
-  "+gmail/[Gmail]/All Mail" \
-  "+gmail/[Gmail]/Sent Mail" \
   "Boon Media" \
   "+boon/Inbox" \
   "+boon/[Gmail]/All Mail" \
