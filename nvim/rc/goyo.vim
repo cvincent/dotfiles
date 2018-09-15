@@ -1,5 +1,12 @@
 function! s:goyo_enter()
-  set relativenumber
+  au! FocusLost *
+  au! FocusGained *
+  au! WinLeave *
+  au! WinEnter *
+  au! InsertLeave *
+  set nocursorline
+  set nonumber
+  set norelativenumber
   set scrolloff=999
 endfunction
 
