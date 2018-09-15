@@ -1,4 +1,4 @@
-set folder = ~/.mail
+set folder = /media/redplateaus/ExtraDrive1/mail
 set header_cache = ~/.cache/mutt
 set mbox_type = Maildir
 set editor = nvim
