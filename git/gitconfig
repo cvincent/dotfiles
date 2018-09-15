@@ -2,7 +2,7 @@
 	name = Chris Vincent
 	email = c.j.vincent@gmail.com
 [credential]
-	helper = cache
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [init]
 	templatedir = ~/.git_template
 [alias]
