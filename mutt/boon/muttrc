@@ -12,4 +12,14 @@ macro index,pager gi "<change-folder>+boon/Inbox<enter>" "go to Inbox"
 macro index,pager ga "<change-folder>+boon/[Gmail]/All Mail<enter>" "go to Archive"
 macro index,pager gs "<change-folder>+boon/[Gmail]/Sent Mail<enter>" "go to Sent"
 
-macro index,pager A  "<delete-message>"  "mark message as Archived"
+macro index,pager o "<sync-mailbox><shell-escape>mbsync boon\n"
+
+# Mark message(s) as read, sync, delete from Inbox, then sync again.  This
+# ensures no duplicate messages in All Mail and that read states are preserved.
+macro index,pager A "\
+  <tag-prefix>WN\
+  o\
+  <tag-prefix><delete-message>\n\
+  :set delete=yes\n\
+  o\
+  :set delete=no\n" "Mark as read and delete from Inbox (still in All Mail)"
