@@ -21,6 +21,7 @@
     ~/.compton.conf: compton.conf
     ~/.mbsyncrc: mbsyncrc
     ~/.Xmodmap: Xmodmap
+    ~/.newsboat/config: newsboat.conf
     ~/.config/qutebrowser/config.py:
       create: true
       path: qutebrowser.py
