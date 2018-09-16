@@ -5,25 +5,25 @@
 - clean: ['~']
 
 - link:
+    ~/.Xmodmap: Xmodmap
     ~/.bash_profile: bash/bash_profile
-    ~/.inputrc: bash/inputrc
-    ~/.vim: vim/vim
-    ~/.vimrc: vim/vimrc
-    ~/.gvimrc: vim/gvimrc
+    ~/.compton.conf: compton.conf
+    ~/.gemrc: gemrc
     ~/.git_template: git/git_template
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.gemrc: gemrc
+    ~/.gvimrc: vim/gvimrc
+    ~/.i3blocks.conf: i3blocks.conf
+    ~/.inputrc: bash/inputrc
     ~/.irbrc: irbrc
+    ~/.mbsyncrc: mbsyncrc
+    ~/.ncmpcpp/bindings: ncmpcpp/bindings
+    ~/.ncmpcpp/config: ncmpcpp/config
+    ~/.newsboat/config: newsboat.conf
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
-    ~/.i3blocks.conf: i3blocks.conf
-    ~/.compton.conf: compton.conf
-    ~/.mbsyncrc: mbsyncrc
-    ~/.Xmodmap: Xmodmap
-    ~/.newsboat/config: newsboat.conf
-    ~/.ncmpcpp/config: ncmpcpp/config
-    ~/.ncmpcpp/bindings: ncmpcpp/bindings
+    ~/.vim: vim/vim
+    ~/.vimrc: vim/vimrc
     ~/.config/qutebrowser/config.py:
       create: true
       path: qutebrowser.py
