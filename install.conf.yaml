@@ -1,5 +1,6 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ['~']
@@ -8,6 +9,17 @@
     ~/.Xmodmap: Xmodmap
     ~/.bash_profile: bash/bash_profile
     ~/.compton.conf: compton.conf
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/fish/config.fish: fish
+    ~/.config/i3/config: i3.conf
+    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.config/mutt: mutt
+    ~/.config/nvim/UltiSnips: nvim/UltiSnips
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim/rc: nvim/rc
+    ~/.config/powerline-shell: powerline-shell
+    ~/.config/qutebrowser/config.py: qutebrowser.py
+    ~/.config/ranger: ranger
     ~/.gemrc: gemrc
     ~/.git_template: git/git_template
     ~/.gitconfig: git/gitconfig
@@ -17,6 +29,7 @@
     ~/.inputrc: bash/inputrc
     ~/.irbrc: irbrc
     ~/.mbsyncrc: mbsyncrc
+    ~/.mbsyncrc: mbsyncrc
     ~/.ncmpcpp/bindings: ncmpcpp/bindings
     ~/.ncmpcpp/config: ncmpcpp/config
     ~/.newsboat/config: newsboat.conf
@@ -24,40 +37,6 @@
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
-    ~/.config/qutebrowser/config.py:
-      create: true
-      path: qutebrowser.py
-    ~/.config/fish/config.fish:
-      create: true
-      path: fish
-    ~/.config/nvim/init.vim:
-      create: true
-      path: nvim/init.vim
-    ~/.config/nvim/rc:
-      create: true
-      path: nvim/rc
-    ~/.config/nvim/UltiSnips:
-      create: true
-      path: nvim/UltiSnips
-    ~/.mbsyncrc: mbsyncrc
-    ~/.config/ranger:
-      create: true
-      path: ranger
-    ~/.config/powerline-shell:
-      create: true
-      path: powerline-shell
-    ~/.config/mutt:
-      create: true
-      path: mutt
-    ~/.config/kitty/kitty.conf:
-      create: true
-      path: kitty.conf
-    ~/.config/i3/config:
-      create: true
-      path: i3.conf
-    ~/.config/alacritty/alacritty.yml:
-      create: true
-      path: alacritty.yml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
