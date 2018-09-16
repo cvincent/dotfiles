@@ -22,6 +22,8 @@
     ~/.mbsyncrc: mbsyncrc
     ~/.Xmodmap: Xmodmap
     ~/.newsboat/config: newsboat.conf
+    ~/.ncmpcpp/config: ncmpcpp/config
+    ~/.ncmpcpp/bindings: ncmpcpp/bindings
     ~/.config/qutebrowser/config.py:
       create: true
       path: qutebrowser.py
