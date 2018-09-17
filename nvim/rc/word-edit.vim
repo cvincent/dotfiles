@@ -1,6 +1,4 @@
 " Get Ctrl-Arrows and -Backspace working in command mode
-map  <A-Backspace>
-
-" Will probably need to load kitty with a different config for arrows...
-map <C-Right> <S-Right>
-map <C-Left> <S-Left>
+cmap  <A-Backspace>
+cmap <M-b> <S-Left>
+cmap <M-f> <S-Right>
