@@ -1,18 +1,18 @@
 c.auto_save.session = True
 
 c.fonts.monospace = '"PragmataPro Liga"'
-c.fonts.completion.entry = "7pt monospace"
-c.fonts.completion.category = "bold 7pt monospace"
-c.fonts.debug_console = "7pt monospace"
-c.fonts.downloads = "7pt monospace"
-c.fonts.hints = "7pt monospace"
-c.fonts.keyhint = "7pt monospace"
-c.fonts.messages.error = "7pt monospace"
-c.fonts.messages.info = "7pt monospace"
-c.fonts.messages.warning = "7pt monospace"
-c.fonts.prompts = "7pt monospace"
-c.fonts.statusbar = "7pt monospace"
-c.fonts.tabs = "7pt monospace"
+c.fonts.completion.entry = "10pt monospace"
+c.fonts.completion.category = "bold 10pt monospace"
+c.fonts.debug_console = "10pt monospace"
+c.fonts.downloads = "10pt monospace"
+c.fonts.hints = "10pt monospace"
+c.fonts.keyhint = "10pt monospace"
+c.fonts.messages.error = "10pt monospace"
+c.fonts.messages.info = "10pt monospace"
+c.fonts.messages.warning = "10pt monospace"
+c.fonts.prompts = "10pt monospace"
+c.fonts.statusbar = "10pt monospace"
+c.fonts.tabs = "10pt monospace"
 
 solarized = {
     'base03': '#002b36',
@@ -362,3 +362,10 @@ c.colors.tabs.selected.odd.bg = solarized['green']
 ## Foreground color of selected odd tabs.
 ## Type: QtColor
 c.colors.tabs.selected.odd.fg = solarized['base2']
+
+config.bind('V', 'hint links spawn mpv {hint-url}')
+config.bind('d', 'scroll-page 0 0.5')
+config.bind('u', 'scroll-page 0 -0.5')
+config.bind('U', 'undo')
+config.bind('x', 'tab-close')
+
