@@ -12,7 +12,7 @@
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/fish/config.fish: fish
     ~/.config/i3/config: i3.conf
-    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/mutt: mutt
     ~/.config/nvim/UltiSnips: nvim/UltiSnips
     ~/.config/nvim/init.vim: nvim/init.vim
@@ -26,9 +26,10 @@
     ~/.gitignore_global: git/gitignore_global
     ~/.gvimrc: vim/gvimrc
     ~/.i3blocks.conf: i3blocks.conf
+    ~/.imapfilter/config.lua: imapfilter/config.lua
     ~/.inputrc: bash/inputrc
     ~/.irbrc: irbrc
-    ~/.mbsyncrc: mbsyncrc
+    ~/.mailcap: mailcap
     ~/.mbsyncrc: mbsyncrc
     ~/.ncmpcpp/bindings: ncmpcpp/bindings
     ~/.ncmpcpp/config: ncmpcpp/config
