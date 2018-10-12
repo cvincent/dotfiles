@@ -11,6 +11,8 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 " Tag completion
 Plug 'ncm2/ncm2-tagprefix'
+" Python
+Plug 'ncm2/ncm2-jedi'
 " LanguageClient support
 " Not using for now; Solargraph needs work
 " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
@@ -23,7 +25,8 @@ Plug 'w0rp/ale'
 " Tags manager
 Plug 'ludovicchabant/vim-gutentags'
 " Awesome theme
-Plug 'iCyMind/NeoSolarized'
+" Plug 'iCyMind/NeoSolarized'
+Plug 'frankier/neovim-colors-solarized-truecolor-only'
 " Auto-indent on put
 Plug 'sickill/vim-pasta'
 " Nicer file navigation
@@ -235,9 +238,9 @@ set scroll=10
 set laststatus=1
 
 " Dark Solarized
-" set termguicolors
+set termguicolors
 set background=dark
-colorscheme NeoSolarized
+colorscheme solarized
 
 " Don't highlight search
 set nohlsearch
