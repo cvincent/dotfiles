@@ -10,3 +10,4 @@ ranger/bookmarks
 ranger/history
 ranger/tagged
 mbsyncrc
+imapfilter/config.lua
