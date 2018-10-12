@@ -8,19 +8,24 @@ set sort = threads
 set sort_aux = reverse-last-date-received
 set timeout = "5"
 set mail_check = "10"
-set date_format="%m/%d %I:%M"
-set index_format="%2C %Z %?X?A& ? %D %-15.15F %s (%-4.4c)"
+set date_format = "%m/%d %I:%M"
+set index_format = "%2C %Z %?X?A& ? %D %-15.15F %s (%-4.4c)"
 set markers = no
 set mark_old = no
 set rfc2047_parameters = yes
 set forward_format="Fwd: %s"
 unset mime_forward
+set narrow_tree = yes
 
-set new_mail_command="notify-send 'New email' '%n new message(s)' &"
+set signature = "~/.config/mutt/signature"
+set sig_on_top = yes
+
+set new_mail_command = "notify-send 'New email' '%n new message(s)' &"
 unset wait_key
 
 auto_view text/html
 auto_view application/pdf
+auto_view text/calendar application/ics
 alternative_order text/plain text/enriched text/html
 
 source "gpg2 -dq ~/.config/mutt/creds.gpg |"
