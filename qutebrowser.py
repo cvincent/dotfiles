@@ -363,9 +363,10 @@ c.colors.tabs.selected.odd.bg = solarized['green']
 ## Type: QtColor
 c.colors.tabs.selected.odd.fg = solarized['base2']
 
-config.bind('V', 'hint links spawn mpv {hint-url}')
+config.bind('v', 'hint links spawn mpv {hint-url}')
+config.bind('V', 'spawn mpv {url}')
 config.bind('d', 'scroll-page 0 0.5')
 config.bind('u', 'scroll-page 0 -0.5')
 config.bind('U', 'undo')
 config.bind('x', 'tab-close')
-
+config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
