@@ -29,6 +29,7 @@
     ~/.imapfilter/config.lua: imapfilter/config.lua
     ~/.inputrc: bash/inputrc
     ~/.irbrc: irbrc
+    ~/.lbdbrc: lbdbrc
     ~/.mailcap: mailcap
     ~/.mbsyncrc: mbsyncrc
     ~/.ncmpcpp/bindings: ncmpcpp/bindings
