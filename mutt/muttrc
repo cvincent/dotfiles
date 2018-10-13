@@ -2,7 +2,7 @@ set folder = /media/redplateaus/ExtraDrive1/mail
 set header_cache = ~/.cache/mutt
 set mbox_type = Maildir
 set editor = nvim
-set content_type = 'text/plain'
+set content_type = "text/plain"
 set realname = "Chris Vincent"
 set sort = threads
 set sort_aux = reverse-last-date-received
@@ -16,6 +16,7 @@ set rfc2047_parameters = yes
 set forward_format="Fwd: %s"
 unset mime_forward
 set narrow_tree = yes
+set query_command = "lbdbq '%s'"
 
 set signature = "~/.config/mutt/signature"
 set sig_on_top = yes
