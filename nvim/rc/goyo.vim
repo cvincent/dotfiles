@@ -8,6 +8,7 @@ function! s:goyo_enter()
   set nonumber
   set norelativenumber
   set scrolloff=999
+  set spell
 endfunction
 
 autocmd User GoyoEnter nested call <SID>goyo_enter()
