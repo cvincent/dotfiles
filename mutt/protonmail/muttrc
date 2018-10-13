@@ -15,16 +15,19 @@ macro index,pager gi "<change-folder>+protonmail/Inbox<enter>" "go to Inbox"
 macro index,pager ga "<change-folder>+protonmail/Archive<enter>" "go to Archive"
 macro index,pager gs "<change-folder>+protonmail/Sent<enter>" "go to Sent"
 
-macro index,pager o "<sync-mailbox><shell-escape>imapfilter; mbsync protonmail\n"
+macro index,pager o "<sync-mailbox><shell-escape>pollmail protonmail\n"
 
-# Mark message(s) as read, sync, move to IMAP Archive, then sync again.  This
+# Mark message(s) as read, sync, move to IMAP Archive, then sync again. This
 # ensures no duplicate messages and that read states are preserved.
 macro index,pager A "\
-  <tag-prefix>WN\
+  <tag-prefix-cond>WN\
   o\
   :set confirmappend=no\n\
-  <tag-prefix><save-message>imap://127.0.0.1:1143/Archive\n\
+  <tag-prefix-cond><save-message>imap://127.0.0.1:1143/Archive\n\
   :set confirmappend=yes\n\
   :set delete=yes\n\
   o\
   :set delete=no\n" "Mark as read and move to Archive"
+
+macro index,pager M "<tag-prefix-cond><save-message>imap://127.0.0.1:1143/Folders/" "Move to an IMAP folder"
+
