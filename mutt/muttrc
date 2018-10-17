@@ -17,6 +17,9 @@ set forward_format="Fwd: %s"
 unset mime_forward
 set narrow_tree = yes
 set query_command = "lbdbq '%s'"
+set fast_reply
+unset help
+set pager_stop
 
 set signature = "~/.config/mutt/signature"
 set sig_on_top = yes
