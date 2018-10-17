@@ -6,6 +6,9 @@
 - clean: ['~']
 
 - link:
+    ~/bin/:
+      glob: true
+      path: bin/*
     ~/.Xmodmap: Xmodmap
     ~/.bash_profile: bash/bash_profile
     ~/.compton.conf: compton.conf

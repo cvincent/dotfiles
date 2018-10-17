@@ -1,0 +1,2 @@
+#!/bin/bash
+kitty --class=$1 -o background_opacity=0.85 $2

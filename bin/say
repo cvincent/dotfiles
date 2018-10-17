@@ -1,0 +1,7 @@
+#!/bin/bash
+# notify-send "$@"
+
+rm /tmp/pico.wav 2> /dev/null
+pico2wave -l=en-US -w=/tmp/pico.wav "$@"
+normalize-audio -a -12dBFS /tmp/pico.wav 2> /dev/null
+aplay /tmp/pico.wav 2> /dev/null

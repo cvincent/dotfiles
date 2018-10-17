@@ -1,0 +1,2 @@
+#!/bin/bash
+while :; do nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo; sleep 1; done

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+imapfilter
+mbsync $1
+find /media/redplateaus/ExtraDrive1/mail/$1/ -type f -mtime -1 -print0 | xargs -0 -n 1 -r /bin/bash -c 'lbdb-fetchaddr -a < "$1"' lbdb-fetchaddr
