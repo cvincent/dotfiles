@@ -20,6 +20,7 @@
     ~/.config/powerline-shell: powerline-shell
     ~/.config/qutebrowser/config.py: qutebrowser.py
     ~/.config/ranger: ranger
+    ~/.config/urlscan/config.json: urlscan.json
     ~/.gemrc: gemrc
     ~/.git_template: git/git_template
     ~/.gitconfig: git/gitconfig
