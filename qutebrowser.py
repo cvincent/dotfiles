@@ -370,3 +370,6 @@ config.bind('u', 'scroll-page 0 -0.5')
 config.bind('U', 'undo')
 config.bind('x', 'tab-close')
 config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
+
+c.downloads.location.directory = "~/Downloads"
+c.downloads.location.prompt = False
