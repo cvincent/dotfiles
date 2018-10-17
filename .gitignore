@@ -11,3 +11,4 @@ ranger/history
 ranger/tagged
 mbsyncrc
 imapfilter/config.lua
+__pycache__
