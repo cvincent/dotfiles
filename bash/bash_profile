@@ -80,6 +80,8 @@ shopt -s histappend
 ### ENV ###
 ###########
 
+export BROWSER="qbopen personal"
+
 export EDITOR="/usr/bin/nvim"
 export GPG_TTY=`tty`
 
