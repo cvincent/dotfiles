@@ -26,4 +26,4 @@ bind pager G bottom
 
 macro index o "<shell-escape>$HOME/bin/pollmail<enter>" "Poll for new mail (slow)"
 
-macro pager \cb "<pipe-message>urlscan<enter>" "get URLs"
+macro pager \cb "<pipe-message>urlscan -r 'qbopen personal {}'<enter>" "get URLs"
