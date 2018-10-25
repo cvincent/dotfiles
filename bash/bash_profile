@@ -67,14 +67,18 @@ bind '"\C-h": backward-kill-word'
 ### SETTINGS ###
 ################
 
-HISTSIZE=100000
-HISTFILESIZE=100000
+# Infinite history
+HISTSIZE=
+HISTFILESIZE=
 
 # Don't put duplicate lines or lines starting with space in the history
 HISTCONTROL=ignoreboth
 
 # Append to the history file, don't overwrite it
 shopt -s histappend
+
+# Enter directory name to cd into it
+shopt -s autocd
 
 ###########
 ### ENV ###
