@@ -8,12 +8,12 @@ set sidebar_folder_indent = yes
 mailboxes \
   "ProtonMail" \
   "+protonmail/Inbox" \
+  "+protonmail/Folders/self" \
   "+protonmail/Folders/deductible" \
   "+protonmail/Folders/maybe-deductible" \
   "+protonmail/Folders/receipts" \
   "+protonmail/Folders/utilities" \
   "+protonmail/Folders/statements" \
-  "+protonmail/Folders/self" \
   "+protonmail/Folders/cruse" \
   "+protonmail/Folders/cruft" \
   "+protonmail/Archive" \
