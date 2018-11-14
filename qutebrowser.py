@@ -363,6 +363,7 @@ c.colors.tabs.selected.odd.bg = solarized['green']
 ## Type: QtColor
 c.colors.tabs.selected.odd.fg = solarized['base2']
 
+config.bind('e', 'fake-key <ESC>')
 config.bind('v', 'hint links spawn mpv {hint-url}')
 config.bind('V', 'spawn mpv {url}')
 config.bind('d', 'scroll-page 0 0.5')
