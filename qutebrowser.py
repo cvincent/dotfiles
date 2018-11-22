@@ -374,3 +374,5 @@ config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-ever
 
 c.downloads.location.directory = "~/Downloads"
 c.downloads.location.prompt = False
+
+c.content.cookies.accept = "no-3rdparty"
