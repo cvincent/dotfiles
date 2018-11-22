@@ -3,6 +3,7 @@ set spoolfile = "+protonmail/Inbox"
 set copy = no
 unset trash
 
+unset smtp_authenticators
 set smtp_url = "smtp://$my_protonmail_email:$my_protonmail_pass@127.0.0.1:1025/"
 set ssl_force_tls = yes
 set ssl_starttls = yes

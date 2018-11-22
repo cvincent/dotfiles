@@ -4,21 +4,3 @@ set mail_check_stats
 set sidebar_divider_char = "║"
 set sidebar_short_path = yes
 set sidebar_folder_indent = yes
-
-mailboxes \
-  "ProtonMail" \
-  "+protonmail/Inbox" \
-  "+protonmail/Folders/self" \
-  "+protonmail/Folders/deductible" \
-  "+protonmail/Folders/maybe-deductible" \
-  "+protonmail/Folders/receipts" \
-  "+protonmail/Folders/utilities" \
-  "+protonmail/Folders/statements" \
-  "+protonmail/Folders/cruse" \
-  "+protonmail/Folders/cruft" \
-  "+protonmail/Archive" \
-  "+protonmail/Sent" \
-  "Boon Media" \
-  "+boon/Inbox" \
-  "+boon/[Gmail]/All Mail" \
-  "+boon/[Gmail]/Sent Mail"

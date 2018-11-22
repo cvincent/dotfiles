@@ -41,6 +41,7 @@ folder-hook boon/* "source ~/.config/mutt/boon/muttrc"
 source ~/.config/mutt/solarized
 source ~/.config/mutt/sidebar
 source ~/.config/mutt/keybindings
+source ~/.config/mutt/secrets
 
 # Default account:
 source ~/.config/mutt/protonmail/muttrc
