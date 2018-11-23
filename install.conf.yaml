@@ -14,6 +14,7 @@
     ~/.bashrc: bash/bashrc
     ~/.compton.conf: compton.conf
     ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/dunst/dunstrc: ~/.cache/wal/dunstrc
     ~/.config/fish/config.fish: fish
     ~/.config/i3/config: i3.conf
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
@@ -25,6 +26,7 @@
     ~/.config/qutebrowser/config.py: qutebrowser.py
     ~/.config/ranger: ranger
     ~/.config/urlscan/config.json: urlscan.json
+    ~/.config/wal/templates/dunstrc: wal/templates/dunstrc
     ~/.gemrc: gemrc
     ~/.git_template: git/git_template
     ~/.gitconfig: git/gitconfig
@@ -47,4 +49,3 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-
