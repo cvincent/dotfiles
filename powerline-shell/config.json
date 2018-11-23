@@ -9,6 +9,5 @@
   "cwd": {
     "mode": "plain",
     "max_depth": 1
-  },
-  "theme": "~/.config/powerline-shell/themes/solarized-dark.py"
+  }
 }
