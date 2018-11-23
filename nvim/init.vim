@@ -24,9 +24,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 " Tags manager
 Plug 'ludovicchabant/vim-gutentags'
-" Awesome theme
-" Plug 'iCyMind/NeoSolarized'
-Plug 'frankier/neovim-colors-solarized-truecolor-only'
+" Get colors from wal config
+Plug 'dylanaraps/wal.vim'
 " Auto-indent on put
 Plug 'sickill/vim-pasta'
 " Nicer file navigation
@@ -172,7 +171,7 @@ set backspace=indent,eol,start
 " Syntax highlighting
 syntax on
 " Highlight current line
-set cursorline
+" set cursorline
 
 " Start searching while typing
 set incsearch
@@ -237,10 +236,8 @@ set scroll=10
 " Always show status line
 set laststatus=1
 
-" Dark Solarized
-set termguicolors
-set background=dark
-colorscheme solarized
+" Colors from wal
+colorscheme wal
 
 " Don't highlight search
 set nohlsearch

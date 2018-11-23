@@ -11,6 +11,7 @@
       path: bin/*
     ~/.Xmodmap: Xmodmap
     ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
     ~/.compton.conf: compton.conf
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/fish/config.fish: fish
