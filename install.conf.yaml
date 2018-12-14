@@ -25,13 +25,14 @@
     ~/.config/powerline-shell: powerline-shell
     ~/.config/qutebrowser/config.py: qutebrowser.py
     ~/.config/ranger: ranger
+    ~/.config/rofi/config: rofi.conf
     ~/.config/urlscan/config.json: urlscan.json
     ~/.config/wal/templates/dunstrc: wal/templates/dunstrc
+    ~/.config/wal/templates/rofi.rasi: wal/templates/rofi.rasi
     ~/.gemrc: gemrc
     ~/.git_template: git/git_template
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.gvimrc: vim/gvimrc
     ~/.i3blocks.conf: i3blocks.conf
     ~/.imapfilter/config.lua: imapfilter/config.lua
     ~/.inputrc: bash/inputrc
