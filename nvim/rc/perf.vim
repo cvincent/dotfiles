@@ -1,5 +1,5 @@
 " Faster default regex engine?
-set re=1
+" set re=1
 
 " set number
 " set nocursorline
