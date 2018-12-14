@@ -44,8 +44,6 @@
     ~/.newsboat/config: newsboat.conf
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
-    ~/.vim: vim/vim
-    ~/.vimrc: vim/vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
