@@ -1,116 +1,171 @@
 filetype off
 call plug#begin('~/.config/nvim/plugged')
 
-" ncm2 completion framework
-Plug 'ncm2/ncm2'
+"""""""""""""""""""
+""" LSP SUPPORT """
+"""""""""""""""""""
+" Dependency for vim-lsp
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+
+""""""""""""""""""""
+""" AUTOCOMPLETE """
+""""""""""""""""""""
 " Remote plugins; dependency for ncm2
 Plug 'roxma/nvim-yarp'
+" ncm2 completion framework
+Plug 'ncm2/ncm2'
+" Completion via vim-lsp
+Plug 'ncm2/ncm2-vim-lsp'
 " Buffer completion
 Plug 'ncm2/ncm2-bufword'
 " Path completion; disabled for now, annoying more often than useful
 Plug 'ncm2/ncm2-path'
 " Tag completion
 Plug 'ncm2/ncm2-tagprefix'
-" Python
-Plug 'ncm2/ncm2-jedi'
-" LanguageClient support
-" Not using for now; Solargraph needs work
-" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
+""""""""""""""""""""""
+""" USER INTERFACE """
+""""""""""""""""""""""
 " Nice status line
 Plug 'vim-airline/vim-airline'
+" Airline themes
 Plug 'vim-airline/vim-airline-themes'
-" Syntax checking and linting
-Plug 'w0rp/ale'
-" Tags manager
-Plug 'ludovicchabant/vim-gutentags'
 " Get colors from wal config
 Plug 'dylanaraps/wal.vim'
-" Auto-indent on put
-Plug 'sickill/vim-pasta'
+
+""""""""""""""""""""""""
+""" IDE-LIKE SUPPORT """
+""""""""""""""""""""""""
 " Nicer file navigation
 Plug 'tpope/vim-vinegar'
-" Dependency for vim-notes:
-Plug 'xolox/vim-misc'
-" Note taking within Vim
-Plug 'xolox/vim-notes'
+" Linking up files for easy access/alternates
+Plug 'tpope/vim-projectionist'
+" Tags manager
+Plug 'ludovicchabant/vim-gutentags'
 " Fast project-wide search
 Plug 'rking/ag.vim'
-" Easily change, delete, and add surroundings
-Plug 'tpope/vim-surround'
-" Quickly convert Ruby block formats
-Plug 'jgdavey/vim-blockle'
-" Ruby support
-Plug 'vim-ruby/vim-ruby'
-" Awesome Rails support
-Plug 'tpope/vim-rails'
-" Awesome snippets
-Plug 'SirVer/ultisnips'
-" Default snippets
-Plug 'honza/vim-snippets'
+" Persistent sessions
+Plug 'tpope/vim-obsession'
 " Awesome Git support within Vim
 Plug 'tpope/vim-fugitive'
 " GitHub integration for vim-fugitive
 Plug 'tpope/vim-rhubarb'
+" Awesome snippets
+Plug 'SirVer/ultisnips'
+" Default snippets
+Plug 'honza/vim-snippets'
+" Send commands to tmux
+Plug 'cvincent/tslime.vim'
+" Open files from QuickFix in window of choice (finally!)
+Plug 'yssl/QFEnter'
+" Create scratch buffer easily
+Plug 'vim-scripts/scratch.vim'
+
+"""""""""""""""""""""
+""" PROSE EDITING """
+"""""""""""""""""""""
+" Dependency for vim-notes
+Plug 'xolox/vim-misc'
+" Note taking within Vim; using my branch which fixes conflict with ncm2
+Plug 'cvincent/vim-notes'
+" For editing non-code
+Plug 'junegunn/goyo.vim'
+
+""""""""""""""""""""
+""" CODE EDITING """
+""""""""""""""""""""
+" Auto-indent on put
+Plug 'sickill/vim-pasta'
+" Easily change, delete, and add surroundings
+Plug 'tpope/vim-surround'
 " Auto-pairing of quotes/brackets/etc
 Plug 'vim-scripts/AutoClose'
 " Easily un/comment code
 Plug 'tpope/vim-commentary'
-" Send commands to tmux
-Plug 'cvincent/tslime.vim'
-" RSpec launcher
-Plug 'thoughtbot/vim-rspec'
 " Dot-repeat for plugins
 Plug 'tpope/vim-repeat'
+" Awesome Subvert command for intelligent substitution
+Plug 'tpope/vim-abolish'
+
+""""""""""""""""""""
+""" KEY COMMANDS """
+""""""""""""""""""""
 " Unix commands
 Plug 'tpope/vim-eunuch'
 " Various functionality for bracket keys
 Plug 'tpope/vim-unimpaired'
-" Awesome Subvert command for intelligent substitution
-Plug 'tpope/vim-abolish'
-" The latest support for HAML, SASS, and SCSS
-Plug 'tpope/vim-haml'
-" Linking up files for easy access/alternates
-Plug 'tpope/vim-projectionist'
-" Elixir support
-Plug 'elixir-lang/vim-elixir'
-" alchemist-server integration for Elixir
-Plug 'slashmili/alchemist.vim'
-" Support for Phoenix web framework
-Plug 'avdgaag/vim-phoenix'
-" Modern JavaScript support
-Plug 'pangloss/vim-javascript'
-" JSX support
-Plug 'mxw/vim-jsx'
 " Automatically add end and such
 Plug 'tpope/vim-endwise'
 " Easily insert paired HTML/XML tags, and more
 Plug 'tpope/vim-ragtag'
-" Create scratch buffer easily
-Plug 'vim-scripts/scratch.vim'
-" Support for the Rust language
-Plug 'wting/rust.vim'
-" Open files from QuickFix in window of choice (finally!)
-Plug 'yssl/QFEnter'
-" Persistent sessions
-Plug 'tpope/vim-obsession'
-" Crystal support
-Plug 'rhysd/vim-crystal'
-" Brightscript (Roku) support
-" Plug 'chooh/brightscript.vim'
+
+"""""""""""""""""""""""""""""""""""
+""" LANGUAGE/FRAMEWORK SPECIFIC """
+"""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""
+""" RUBY/RAILS """
+""""""""""""""""""
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'thoughtbot/vim-rspec'
+" Quickly convert Ruby block formats
+Plug 'jgdavey/vim-blockle'
 " Inline syntax support; vim-ruby-heredoc-syntax depends on this
 Plug 'Shougo/context_filetype.vim'
-" Better Ruby heredoc support, with inline syntax
-Plug 'joker1007/vim-ruby-heredoc-syntax'
 " CoffeeScript support (vim-ruby-heredoc-syntax expects it)
 Plug 'kchmck/vim-coffee-script'
+" Better Ruby heredoc support, with inline syntax
+Plug 'joker1007/vim-ruby-heredoc-syntax'
+
+""""""""""""""""""
+""" TYPESCRIPT """
+""""""""""""""""""
+Plug 'HerringtonDarkholme/yats.vim'
+
+""""""""""""""""""
+""" JAVASCRIPT """
+""""""""""""""""""
+Plug 'pangloss/vim-javascript'
+
+"""""""""""
+""" JSX """
+"""""""""""
+Plug 'mxw/vim-jsx'
+
+""""""""""""""""""""""
+""" HAML/SASS/SCSS """
+""""""""""""""""""""""
+Plug 'tpope/vim-haml'
+
+""""""""""""""""""""""
+""" ELIXIR/PHOENIX """
+""""""""""""""""""""""
+Plug 'elixir-lang/vim-elixir'
+Plug 'avdgaag/vim-phoenix'
+" alchemist-server integration
+Plug 'slashmili/alchemist.vim'
+
+"""""""""""""""
+""" CRYSTAL """
+"""""""""""""""
+Plug 'rhysd/vim-crystal'
+
+""""""""""""
+""" RUST """
+""""""""""""
+Plug 'wting/rust.vim'
+
+"""""""""""""""""
+""" VIMSCRIPT """
+"""""""""""""""""
 " Vim debug tools
 Plug 'tpope/vim-scriptease'
-" For editing non-code
-Plug 'junegunn/goyo.vim'
 
-" " Fuzzy file finder
-" Plug 'kien/ctrlp.vim'
+"""""""""""""""""""""""
+""" MAYBE RESURRECT """
+"""""""""""""""""""""""
 " " Move buffers between windows
 " Plug 'wesQ3/vim-windowswap'
 " " Text object for indent levels
@@ -244,6 +299,15 @@ set nohlsearch
 
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash
+
+if executable('typescript-language-server')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'typescript-language-server',
+        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
+        \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
+        \ 'whitelist': ['typescript'],
+        \ })
+  endif
 
 " Source other customizations
 for f in split(glob('~/.config/nvim/rc/*.vim'), '\n')
