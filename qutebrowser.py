@@ -13,7 +13,7 @@ xresources = read_xresources('*')
 # c.backend = 'webkit'
 c.auto_save.session = True
 c.editor.command = ['kitty', 'nvim', '{}']
-# c.spellcheck.languages = ['en-US']
+c.spellcheck.languages = ['en-US']
 
 c.fonts.monospace = '"PragmataPro Liga"'
 c.fonts.completion.entry = "10pt monospace"
@@ -250,21 +250,26 @@ c.colors.keyhint.suffix.fg = xresources['*color2']
 
 ## Blur input focus when leaving insert mode
 config.bind('<escape>', 'leave-mode ;; jseval -q document.activeElement.blur()', mode='insert')
-
 config.bind('<escape>', 'jseval -q document.activeElement.blur()')
-config.bind('e', 'fake-key <ESC>')
-config.bind('v', 'hint links spawn mpv {hint-url}')
-config.bind('V', 'spawn mpv {url}')
+
 config.bind('j', 'scroll-page 0 0.025')
 config.bind('k', 'scroll-page 0 -0.025')
+config.bind('d', 'scroll-page 0 0.5')
+config.bind('u', 'scroll-page 0 -0.5')
 config.bind('<ctrl-j>', 'scroll down')
 config.bind('<ctrl-k>', 'scroll up')
 config.bind('<ctrl-d>', 'repeat 10 scroll down')
 config.bind('<ctrl-u>', 'repeat 10 scroll up')
-config.bind('d', 'scroll-page 0 0.5')
-config.bind('u', 'scroll-page 0 -0.5')
+
+config.bind('e', 'fake-key <ESC>')
 config.bind('U', 'undo')
 config.bind('x', 'tab-close')
+
+config.bind(';v', 'hint links spawn mpv --force-window --no-terminal --keep-open=yes {hint-url}')
+config.bind(';V', 'hint links spawn umpv --playlist --force-window --no-terminal --keep-open=yes {hint-url}')
+config.bind('V', 'spawn --userscript view_in_umpv')
+config.bind('<ctrl-r>', 'spawn --userscript readability')
+config.bind('<ctrl-t>', 'spawn --userscript taskadd project:reading.web')
 config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
 
 c.downloads.location.directory = "~/Downloads"
