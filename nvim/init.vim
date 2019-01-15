@@ -33,6 +33,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Get colors from wal config
 Plug 'dylanaraps/wal.vim'
+" Seamless navigation within tmux
+Plug 'christoomey/vim-tmux-navigator'
 
 """"""""""""""""""""""""
 """ IDE-LIKE SUPPORT """
