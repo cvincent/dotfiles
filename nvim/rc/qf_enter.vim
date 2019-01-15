@@ -1,1 +1,1 @@
-let g:qfenter_open_map = ['<Leader>o']
+let g:qfenter_open_map = ['<CR>', '<Leader>o']
