@@ -12,4 +12,5 @@ ranger/history
 ranger/tagged
 mbsyncrc
 imapfilter/config.lua
+qutebrowser/private.py
 __pycache__
