@@ -23,7 +23,8 @@
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/nvim/rc: nvim/rc
     ~/.config/powerline-shell: powerline-shell
-    ~/.config/qutebrowser/config.py: qutebrowser.py
+    ~/.config/qutebrowser/config.py: qutebrowser/qutebrowser.py
+    ~/.config/qutebrowser/private.py: qutebrowser/private.py
     ~/.config/ranger: ranger
     ~/.config/rofi/config: rofi.conf
     ~/.config/urlscan/config.json: urlscan.json

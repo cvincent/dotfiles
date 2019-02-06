@@ -10,6 +10,8 @@ def read_xresources(prefix):
     return props
 xresources = read_xresources('*')
 
+config.source('private.py')
+
 # c.backend = 'webkit'
 c.auto_save.session = True
 c.editor.command = ['kitty', 'nvim', '{}']
