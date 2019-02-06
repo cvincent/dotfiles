@@ -52,16 +52,6 @@ alias xbanish="~/vendor/xbanish/xbanish"
 # alias tstart="tmuxinator start "
 # alias tkill="stop-services; tmux kill-session"
 
-####################
-### KEY BINDINGS ###
-####################
-
-# Use the same sequence Alacritty defaults to and Vim expects for
-# backward/forward-word
-
-bind '"\e[1;5D": backward-word'
-bind '"\e[1;5C": forward-word'
-
 ################
 ### SETTINGS ###
 ################
