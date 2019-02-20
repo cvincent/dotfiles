@@ -35,7 +35,6 @@ alternative_order text/plain text/enriched text/html
 source "gpg2 -dq ~/.config/mutt/creds.gpg |"
 
 folder-hook protonmail/* "source ~/.config/mutt/protonmail/muttrc"
-folder-hook gmail/* "source ~/.config/mutt/gmail/muttrc"
 folder-hook boon/* "source ~/.config/mutt/boon/muttrc"
 
 source ~/.config/mutt/solarized
