@@ -72,10 +72,10 @@ c.colors.tabs.odd.fg = xresources['*.color8']
 c.colors.tabs.odd.bg = xresources['*.background']
 c.colors.tabs.even.fg = xresources['*.color8']
 c.colors.tabs.even.bg = xresources['*.background']
-c.colors.tabs.selected.odd.fg = xresources['*.foreground']
-c.colors.tabs.selected.odd.bg = xresources['*.background']
-c.colors.tabs.selected.even.fg = xresources['*.foreground']
-c.colors.tabs.selected.even.bg = xresources['*.background']
+c.colors.tabs.selected.odd.fg = xresources['*.background']
+c.colors.tabs.selected.odd.bg = xresources['*.color2']
+c.colors.tabs.selected.even.fg = xresources['*.background']
+c.colors.tabs.selected.even.bg = xresources['*.color2']
 c.colors.webpage.bg = 'white'
 
 # My additions
