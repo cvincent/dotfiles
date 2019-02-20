@@ -35,29 +35,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dylanaraps/wal.vim'
 " Seamless navigation within tmux
 Plug 'christoomey/vim-tmux-navigator'
-
-""""""""""""""""""""""""
-""" IDE-LIKE SUPPORT """
-""""""""""""""""""""""""
-" Nicer file navigation
-Plug 'tpope/vim-vinegar'
-" Linking up files for easy access/alternates
-Plug 'tpope/vim-projectionist'
-" Tags manager
-Plug 'ludovicchabant/vim-gutentags'
-" Fast project-wide search
-Plug 'rking/ag.vim'
-" Persistent sessions
-Plug 'tpope/vim-obsession'
-" Awesome Git support within Vim
-Plug 'tpope/vim-fugitive'
-" GitHub integration for vim-fugitive
-Plug 'tpope/vim-rhubarb'
-" Awesome snippets
-Plug 'SirVer/ultisnips'
-" Default snippets
-Plug 'honza/vim-snippets'
-" Send commands to tmux
+x
 Plug 'jpalardy/vim-slime'
 " Open files from QuickFix in window of choice (finally!)
 Plug 'yssl/QFEnter'
@@ -305,13 +283,13 @@ set nohlsearch
 set shell=/bin/bash
 
 if executable('typescript-language-server')
-    au User lsp_setup call lsp#register_server({
+  au User lsp_setup call lsp#register_server({
         \ 'name': 'typescript-language-server',
         \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
         \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
         \ 'whitelist': ['typescript'],
         \ })
-  endif
+endif
 
 " Source other customizations
 for f in split(glob('~/.config/nvim/rc/*.vim'), '\n')
