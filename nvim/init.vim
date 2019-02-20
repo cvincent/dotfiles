@@ -58,8 +58,6 @@ Plug 'SirVer/ultisnips'
 " Default snippets
 Plug 'honza/vim-snippets'
 " Send commands to tmux
-" Plug 'cvincent/tslime.vim'
-" Send commands to tmux, alternative
 Plug 'jpalardy/vim-slime'
 " Open files from QuickFix in window of choice (finally!)
 Plug 'yssl/QFEnter'
