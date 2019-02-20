@@ -58,11 +58,15 @@ Plug 'SirVer/ultisnips'
 " Default snippets
 Plug 'honza/vim-snippets'
 " Send commands to tmux
-Plug 'cvincent/tslime.vim'
+" Plug 'cvincent/tslime.vim'
+" Send commands to tmux, alternative
+Plug 'jpalardy/vim-slime'
 " Open files from QuickFix in window of choice (finally!)
 Plug 'yssl/QFEnter'
 " Create scratch buffer easily
 Plug 'vim-scripts/scratch.vim'
+" Linting, syntax checking, etc
+Plug 'w0rp/ale'
 
 """""""""""""""""""""
 """ PROSE EDITING """
@@ -89,6 +93,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 " Awesome Subvert command for intelligent substitution
 Plug 'tpope/vim-abolish'
+" Alignments
+Plug 'junegunn/vim-easy-align'
 
 """"""""""""""""""""
 """ KEY COMMANDS """
@@ -172,8 +178,6 @@ Plug 'tpope/vim-scriptease'
 " Plug 'wesQ3/vim-windowswap'
 " " Text object for indent levels
 " Plug 'michaeljsmith/vim-indent-object'
-" " Alignments
-" Plug 'junegunn/vim-easy-align'
 
 call plug#end()
 filetype plugin indent on
