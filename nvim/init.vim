@@ -34,8 +34,31 @@ Plug 'vim-airline/vim-airline-themes'
 " Get colors from wal config
 Plug 'dylanaraps/wal.vim'
 " Seamless navigation within tmux
-Plug 'christoomey/vim-tmux-navigator'
-x
+" Doesn't work alongside split nav wrapping
+" Plug 'christoomey/vim-tmux-navigator'
+
+""""""""""""""""""""""""
+""" IDE-LIKE SUPPORT """
+""""""""""""""""""""""""
+" Nicer file navigation
+Plug 'tpope/vim-vinegar'
+" Linking up files for easy access/alternates
+Plug 'tpope/vim-projectionist'
+" Tags manager
+Plug 'ludovicchabant/vim-gutentags'
+" Fast project-wide search
+Plug 'rking/ag.vim'
+" Persistent sessions
+Plug 'tpope/vim-obsession'
+" Awesome Git support within Vim
+Plug 'tpope/vim-fugitive'
+" GitHub integration for vim-fugitive
+Plug 'tpope/vim-rhubarb'
+" Awesome snippets
+Plug 'SirVer/ultisnips'
+" Default snippets
+Plug 'honza/vim-snippets'
+" Send commands to tmux
 Plug 'jpalardy/vim-slime'
 " Open files from QuickFix in window of choice (finally!)
 Plug 'yssl/QFEnter'
