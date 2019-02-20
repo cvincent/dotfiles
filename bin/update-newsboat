@@ -1,0 +1,4 @@
+#!/bin/bash
+prev=$(xdotool getactivewindow)
+xdotool search --class newsboat windowactivate --sync key q q shift+r
+xdotool windowactivate $prev
