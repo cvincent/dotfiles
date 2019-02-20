@@ -43,7 +43,9 @@
     ~/.mbsyncrc: mbsyncrc
     ~/.ncmpcpp/bindings: ncmpcpp/bindings
     ~/.ncmpcpp/config: ncmpcpp/config
-    ~/.newsboat/config: newsboat.conf
+    ~/.newsboat/config: newsboat/newsboat.conf
+    ~/.newsboat/newsboat-private.conf: newsboat/newsboat-private.conf
+    ~/.newsboat/urls: newsboat/urls
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
 
