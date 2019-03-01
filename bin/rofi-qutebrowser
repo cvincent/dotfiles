@@ -2,6 +2,6 @@
 
 find = "find ~/.cache/qutebrowser -maxdepth 1 -type d -exec sh -c 'basename {}' \\;"
 grep = "grep -v -e qutebrowser -e http -e webengine"
-rofi = "rofi -dmenu"
+rofi = "rofi -dmenu -p 'qutebrowser session'"
 sess = %x(#{find} | #{grep} | #{rofi}).strip
 %x(nohup qutebrowser -r #{sess} &> /dev/null &)
