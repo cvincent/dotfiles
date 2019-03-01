@@ -1,0 +1,2 @@
+#!/bin/bash
+kitty --class=xsel-dictionary -o background_opacity=0.85 -o font_size=14 dict-less $(xsel)
