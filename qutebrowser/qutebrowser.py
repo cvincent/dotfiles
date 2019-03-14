@@ -250,6 +250,8 @@ c.colors.keyhint.suffix.fg = xresources['*color2']
 # ## Foreground color of selected odd tabs.
 # c.colors.tabs.selected.odd.fg = xresources['*background']
 
+config.bind('<ctrl-p>', 'spawn --userscript qute-pass', mode='insert')
+
 ## Blur input focus when leaving insert mode
 config.bind('<escape>', 'leave-mode ;; jseval -q document.activeElement.blur()', mode='insert')
 config.bind('<escape>', 'jseval -q document.activeElement.blur()')
