@@ -27,6 +27,7 @@
     ~/.config/qutebrowser/private.py: qutebrowser/private.py
     ~/.config/ranger: ranger
     ~/.config/rofi/config: rofi.conf
+    ~/.config/rofi-pass/config: rofi-pass
     ~/.config/urlscan/config.json: urlscan.json
     ~/.config/wal/templates/dunstrc: wal/templates/dunstrc
     ~/.config/wal/templates/rofi.rasi: wal/templates/rofi.rasi

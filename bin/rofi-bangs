@@ -26,6 +26,9 @@ LABELS["calculator"]=""
 COMMANDS["qutebrowser"]="rofi-qutebrowser"
 LABELS["qutebrowser"]=""
 
+COMMANDS["pass"]="rofi-pass"
+LABELS["pass"]=""
+
 ################################################################################
 # do not edit below
 ################################################################################
