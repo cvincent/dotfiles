@@ -1,2 +1,2 @@
 #!/bin/bash
-kitty --class="newsboat" -o background_opacity=0.85 -o font_size=14 newsboat
+kitty --class="newsboat" -o font_size=14 newsboat
