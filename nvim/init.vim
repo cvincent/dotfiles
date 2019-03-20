@@ -1,28 +1,10 @@
 filetype off
 call plug#begin('~/.config/nvim/plugged')
 
-"""""""""""""""""""
-""" LSP SUPPORT """
-"""""""""""""""""""
-" Dependency for vim-lsp
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-
 """"""""""""""""""""
 """ AUTOCOMPLETE """
 """"""""""""""""""""
-" Remote plugins; dependency for ncm2
-Plug 'roxma/nvim-yarp'
-" ncm2 completion framework
-Plug 'ncm2/ncm2'
-" Completion via vim-lsp
-Plug 'ncm2/ncm2-vim-lsp'
-" Buffer completion
-Plug 'ncm2/ncm2-bufword'
-" Path completion; disabled for now, annoying more often than useful
-Plug 'ncm2/ncm2-path'
-" Tag completion
-Plug 'ncm2/ncm2-tagprefix'
+Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
 
 """"""""""""""""""""""
 """ USER INTERFACE """
@@ -103,7 +85,8 @@ Plug 'tpope/vim-eunuch'
 " Various functionality for bracket keys
 Plug 'tpope/vim-unimpaired'
 " Automatically add end and such
-Plug 'tpope/vim-endwise'
+" Temporarily disabled, interferes with <CR> remapping...
+" Plug 'tpope/vim-endwise'
 " Easily insert paired HTML/XML tags, and more
 Plug 'tpope/vim-ragtag'
 
@@ -204,7 +187,7 @@ set matchpairs+=<:>
 
 " Expected ex command completion behavior
 set wildmenu
-set wildmode=list:longest
+set wildmode=full
 
 " Case insensitive ex command file completion
 set wildignorecase
@@ -242,7 +225,7 @@ set listchars=tab:>-,trail:·
 nmap <silent> <leader>l :set nolist!<CR>
 
 " Shorten various Vim messages
-set shortmess=atIO
+set shortmess=atIOc
 
 " UTF-8 all the things
 scriptencoding utf-8
