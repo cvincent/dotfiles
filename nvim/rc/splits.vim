@@ -1,3 +1,7 @@
+" More natural split directions
+set splitbelow
+set splitright
+
 " Always maintain equal splits
 au VimResized * wincmd =
 
