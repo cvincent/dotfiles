@@ -48,6 +48,7 @@
     ~/.newsboat/config: newsboat/newsboat.conf
     ~/.newsboat/newsboat-private.conf: newsboat/newsboat-private.conf
     ~/.newsboat/urls: newsboat/urls
+    ~/.psqlrc: psqlrc
     ~/.rspec: rspec
     ~/.tmux.conf: tmux.conf
 
