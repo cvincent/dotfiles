@@ -14,6 +14,7 @@ config.source('private.py')
 
 # c.backend = 'webkit'
 c.auto_save.session = True
+c.session.lazy_restore = True
 c.editor.command = ['kitty', 'nvim', '{}']
 c.spellcheck.languages = ['en-US']
 
@@ -275,8 +276,10 @@ config.bind('V', 'spawn --userscript view_in_umpv')
 config.bind('<ctrl-r>', 'spawn --userscript readability')
 config.bind('<ctrl-t>', 'spawn --userscript taskadd project:reading.web')
 config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
+config.bind(',dc', 'download-clear')
 
 c.downloads.location.directory = "~/Downloads"
 c.downloads.location.prompt = False
 
+c.content.autoplay = False
 c.content.cookies.accept = "no-3rdparty"
