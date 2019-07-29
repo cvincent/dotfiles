@@ -1,2 +1,2 @@
 #!/bin/bash
-dict $1 | less
+dict -s lev $1 | less
