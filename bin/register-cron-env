@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+env_path="$HOME/.cron-env"
+
+rm -f "${env_path}"
+touch "${env_path}"
+
+copy_envs="XAUTHORITY DISPLAY DBUS_SESSION_BUS_ADDRESS"
+
+for env_name in $copy_envs
+do
+    env | grep "${env_name}" >> "${env_path}";
+    echo "export ${env_name}" >> "${env_path}";
+done
+
+chmod 600 "${env_path}"

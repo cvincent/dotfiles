@@ -1,0 +1,8 @@
+#!/bin/sh
+
+win=$(xprop -id $(xdotool getactivewindow) | grep 'WM_CLASS(STRING)' | cut -d'"' -f2)
+
+case $win in
+    "kitty") xdotool key ctrl+shift+v ;;
+    *) xdotool key ctrl+v ;;
+esac

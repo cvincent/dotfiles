@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. /home/redplateaus/.cron-env
+
+while true; do
+    case $(cat /sys/class/power_supply/AC/online) in
+        0) /home/redplateaus/bin/dunstify -r 4201 -u critical "Power cable unplugged!" ;;
+        1) /home/redplateaus/bin/dunstify -C 4201 ;;
+    esac
+    sleep 5
+done
+
