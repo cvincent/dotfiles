@@ -1,0 +1,12 @@
+#!/bin/sh
+
+nl='\n'
+devices=$(echo devices | bluetoothctl | grep Device | grep -v NEW | cut -d' ' -f3-)
+menu="${devices}${nl}Disconnect"
+cmd="$(echo "$menu" | rofi -dmenu -i -p bluetooth)"
+dev=$(echo devices | bluetoothctl | grep "$cmd" | cut -d' ' -f2 | grep -e '[0-9]')
+
+case $cmd in
+    Disconnect) echo disconnect | bluetoothctl ;;
+    *) echo connect "$dev" | bluetoothctl ;;
+esac

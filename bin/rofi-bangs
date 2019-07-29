@@ -14,6 +14,9 @@ declare -A COMMANDS
 ###
 # List of defined 'bangs'
 
+COMMANDS["bluetooth"]="rofi-bluetooth"
+LABELS["bluetooth"]=""
+
 COMMANDS["commands"]="rofi -show run"
 LABELS["commands"]=""
 
