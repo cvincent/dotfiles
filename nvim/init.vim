@@ -48,6 +48,9 @@ Plug 'yssl/QFEnter'
 Plug 'vim-scripts/scratch.vim'
 " Linting, syntax checking, etc
 Plug 'w0rp/ale'
+" Fuzzy finder
+Plug '~/vendor/fzf'
+Plug 'junegunn/fzf.vim'
 
 """""""""""""""""""""
 """ PROSE EDITING """
