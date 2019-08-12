@@ -18,6 +18,8 @@ Plug 'dylanaraps/wal.vim'
 " Seamless navigation within tmux
 " Doesn't work alongside split nav wrapping
 " Plug 'christoomey/vim-tmux-navigator'
+" Automatically stop highlighting search
+Plug 'haya14busa/is.vim'
 
 """"""""""""""""""""""""
 """ IDE-LIKE SUPPORT """
@@ -284,9 +286,6 @@ set laststatus=1
 
 " Colors from wal
 colorscheme wal
-
-" Don't highlight search
-set nohlsearch
 
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash
