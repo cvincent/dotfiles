@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+fw, aw, ah = *ARGV.map(&:to_f)
+
+puts "Frame width: #{fw}"
+puts "Art width: #{aw}"
+puts "Art height: #{ah}"
+
+a = (fw * 2) + aw
+b = (fw * 2) + ah
+c = ((a + b) * 2) + 2
+
+puts "Length required: #{c}"
