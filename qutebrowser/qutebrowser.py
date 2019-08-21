@@ -270,7 +270,7 @@ config.bind('e', 'fake-key <ESC>')
 config.bind('U', 'undo')
 config.bind('x', 'tab-close')
 
-config.bind(';v', 'hint links spawn mpv --force-window --no-terminal --keep-open=yes {hint-url}')
+config.bind(';v', 'hint links spawn mpv --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
 config.bind(';V', 'hint links spawn umpv --playlist --force-window --no-terminal --keep-open=yes {hint-url}')
 config.bind('V', 'spawn --userscript view_in_umpv')
 config.bind('<ctrl-r>', 'spawn --userscript readability')
