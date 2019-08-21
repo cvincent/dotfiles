@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 """"""""""""""""""""
 """ AUTOCOMPLETE """
 """"""""""""""""""""
-Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 """"""""""""""""""""""
 """ USER INTERFACE """
