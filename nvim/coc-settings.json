@@ -1,0 +1,4 @@
+{
+  "eslint.autoFixOnSave": true,
+  "tssever.npm": "/usr/bin/npm"
+}
