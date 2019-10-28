@@ -1,4 +1,5 @@
 filetype off
+
 call plug#begin('~/.config/nvim/plugged')
 
 """"""""""""""""""""
@@ -11,15 +12,18 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 """"""""""""""""""""""
 " Nice status line
 Plug 'vim-airline/vim-airline'
-" Airline themes
-Plug 'vim-airline/vim-airline-themes'
+Plug 'cvincent/vim-airline-themes'
 " Get colors from wal config
 Plug 'dylanaraps/wal.vim'
 " Seamless navigation within tmux
 " Doesn't work alongside split nav wrapping
 " Plug 'christoomey/vim-tmux-navigator'
 " Automatically stop highlighting search
-Plug 'haya14busa/is.vim'
+Plug 'romainl/vim-cool'
+" Allow highlighting the search result under the cursor
+Plug 'PeterRincker/vim-searchlight'
+" Smooth scrolling
+Plug 'terryma/vim-smooth-scroll'
 
 """"""""""""""""""""""""
 """ IDE-LIKE SUPPORT """
@@ -36,6 +40,8 @@ Plug 'rking/ag.vim'
 Plug 'tpope/vim-obsession'
 " Awesome Git support within Vim
 Plug 'tpope/vim-fugitive'
+" Show changes in gutter
+Plug 'mhinz/vim-signify'
 " GitHub integration for vim-fugitive
 Plug 'tpope/vim-rhubarb'
 " Awesome snippets
@@ -49,10 +55,11 @@ Plug 'yssl/QFEnter'
 " Create scratch buffer easily
 Plug 'vim-scripts/scratch.vim'
 " Linting, syntax checking, etc
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 " Fuzzy finder
-Plug '~/vendor/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'Shougo/denite.nvim'
+" Plug '~/vendor/fzf'
+" Plug 'junegunn/fzf.vim'
 
 """""""""""""""""""""
 """ PROSE EDITING """
@@ -94,6 +101,14 @@ Plug 'tpope/vim-unimpaired'
 " Plug 'tpope/vim-endwise'
 " Easily insert paired HTML/XML tags, and more
 Plug 'tpope/vim-ragtag'
+
+""""""""""""""""""""
+""" TEXT OBJECTS """
+""""""""""""""""""""
+" Support for declaring text objects, dependency
+Plug 'kana/vim-textobj-user'
+" JavaScript blocks
+Plug 'haya14busa/vim-textobj-function-syntax'
 
 """""""""""""""""""""""""""""""""""
 """ LANGUAGE/FRAMEWORK SPECIFIC """
@@ -218,8 +233,6 @@ set backspace=indent,eol,start
 
 " Syntax highlighting
 syntax on
-" Highlight current line
-" set cursorline
 
 " Start searching while typing
 set incsearch
@@ -284,20 +297,11 @@ set scroll=10
 " Always show status line
 set laststatus=1
 
-" Colors from wal
-colorscheme wal
+" Load wal-generated colors
+colorscheme walgui
 
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash
-
-if executable('typescript-language-server')
-  au User lsp_setup call lsp#register_server({
-        \ 'name': 'typescript-language-server',
-        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-        \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
-        \ 'whitelist': ['typescript'],
-        \ })
-endif
 
 " Source other customizations
 for f in split(glob('~/.config/nvim/rc/*.vim'), '\n')

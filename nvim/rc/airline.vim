@@ -1,7 +1,9 @@
+let g:airline_theme='walgui'
+exe 'hi! airline_error_bold gui=none guibg=' . g:terminal_color_1
+
 let g:airline_highlighting_cache = 1
 let g:airline_powerline_fonts = 0
 let g:airline_inactive_alt_sep = 1
-let g:airline_highlighting_cache = 1
 let g:airline_skip_empty_sections = 1
 
 let g:airline_section_x = ''

@@ -13,11 +13,12 @@ endfunc
 
 nnoremap <C-N> :call NumberToggle()<CR>
 
-au FocusLost * :set number
-au FocusLost * :set norelativenumber
-au FocusGained * :set relativenumber
-au WinLeave * :set number
-au WinLeave * :set norelativenumber
-au WinEnter * :set relativenumber
+let blacklist = ['denite', 'denite-filter']
+au FocusLost * if index(blacklist, &ft) < 0 | set number
+au FocusLost * if index(blacklist, &ft) < 0 | set norelativenumber
+au FocusGained * if index(blacklist, &ft) < 0 | set relativenumber
+au WinLeave * if index(blacklist, &ft) < 0 | set number
+au WinLeave * if index(blacklist, &ft) < 0 | set norelativenumber
+au WinEnter * if index(blacklist, &ft) < 0 | set relativenumber
 
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'

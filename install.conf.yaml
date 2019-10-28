@@ -19,9 +19,11 @@
     ~/.config/i3/config: i3.conf
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/mutt: mutt
-    ~/.config/nvim/UltiSnips: nvim/UltiSnips
+    ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
+    ~/.config/nvim/colors/walgui.vim: ~/.cache/wal/walgui.vim
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/nvim/rc: nvim/rc
+    ~/.config/nvim/UltiSnips: nvim/UltiSnips
     ~/.config/powerline-shell: powerline-shell
     ~/.config/qutebrowser/config.py: qutebrowser/qutebrowser.py
     ~/.config/qutebrowser/private.py: qutebrowser/private.py
@@ -30,8 +32,9 @@
     ~/.config/rofi-pass/config: rofi-pass
     ~/.config/sway/config: sway.conf
     ~/.config/urlscan/config.json: urlscan.json
-    ~/.config/wal/templates/dunstrc: wal/templates/dunstrc
-    ~/.config/wal/templates/rofi.rasi: wal/templates/rofi.rasi
+    ~/.config/wal/templates:
+      glob: true
+      path: wal/templates/*
     ~/.gemrc: gemrc
     ~/.git_template: git/git_template
     ~/.gitconfig: git/gitconfig

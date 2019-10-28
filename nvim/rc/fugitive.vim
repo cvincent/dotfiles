@@ -22,6 +22,7 @@ silent! nnoremap <Leader>gm :Git merge
 silent! nnoremap <Leader>gpl :call PullFromCurrentBranch()<CR>
 silent! nnoremap <Leader>gpu :call PushToCurrentBranch()<CR>
 silent! nnoremap <Leader>gb :Git checkout -b 
+silent! nnoremap <Leader>gd :tab Gdiff<CR>
 
 au FileType gitcommit nmap <buffer> <Leader>w :wq<CR>
 
