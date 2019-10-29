@@ -54,12 +54,8 @@ Plug 'jpalardy/vim-slime'
 Plug 'yssl/QFEnter'
 " Create scratch buffer easily
 Plug 'vim-scripts/scratch.vim'
-" Linting, syntax checking, etc
-" Plug 'w0rp/ale'
-" Fuzzy finder
+" Fuzzy finding, and other list-oriented stuff
 Plug 'Shougo/denite.nvim'
-" Plug '~/vendor/fzf'
-" Plug 'junegunn/fzf.vim'
 
 """""""""""""""""""""
 """ PROSE EDITING """
