@@ -12,3 +12,9 @@ exe 'hi! Pmenu guibg=' . g:terminal_color_0
 exe 'hi! PmenuSbar guibg=' . g:terminal_color_0
 exe 'hi! PmenuThumb guibg=' . g:terminal_color_15
 exe 'hi! TabLineFill gui=none guibg=' . g:terminal_color_0
+
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
