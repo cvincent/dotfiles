@@ -216,8 +216,8 @@ set wildignorecase
 set ignorecase
 set smartcase
 
-" Show title in Terminal
-set title
+" Don't show title in Terminal; causes undesired i3 for_window retriggering
+set notitle
 
 " Minimum of three lines from vertical edges
 set scrolloff=3
