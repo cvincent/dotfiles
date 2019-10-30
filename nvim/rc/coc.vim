@@ -1,6 +1,9 @@
 set cmdheight=2
 set updatetime=300
 
+nmap <c-z> <Plug>(coc-float-hide)
+imap <c-z> <c-z>
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
