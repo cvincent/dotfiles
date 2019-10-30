@@ -13,7 +13,7 @@ endfunc
 
 nnoremap <C-N> :call NumberToggle()<CR>
 
-let blacklist = ['denite', 'denite-filter']
+let blacklist = ['fzf']
 au FocusLost * if index(blacklist, &ft) < 0 | set number
 au FocusLost * if index(blacklist, &ft) < 0 | set norelativenumber
 au FocusGained * if index(blacklist, &ft) < 0 | set relativenumber

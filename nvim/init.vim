@@ -55,7 +55,8 @@ Plug 'yssl/QFEnter'
 " Create scratch buffer easily
 Plug 'vim-scripts/scratch.vim'
 " Fuzzy finding, and other list-oriented stuff
-Plug 'Shougo/denite.nvim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 """""""""""""""""""""
 """ PROSE EDITING """
