@@ -1,8 +1,15 @@
 #!/bin/sh
 
-win=$(xprop -id $(xdotool getactivewindow) | grep 'WM_CLASS(STRING)' | cut -d'"' -f2)
+win_name=$(xprop -id $(xdotool getactivewindow) | grep 'WM_NAME(STRING)' | cut -d'"' -f2)
+win_class=$(xprop -id $(xdotool getactivewindow) | grep 'WM_CLASS(STRING)' | cut -d'"' -f2)
 
-case $win in
-    "kitty") xdotool key ctrl+shift+v ;;
-    *) xdotool key ctrl+v ;;
+# echo "$win $win_class" > ~/test.txt
+
+case $win_name in
+    "nvim") xdotool key ctrl+shift+v ;;
+    *)
+      case $win_class in
+        "kitty") xdotool key ctrl+shift+v ;;
+        *) xdotool key ctrl+v ;;
+      esac
 esac
