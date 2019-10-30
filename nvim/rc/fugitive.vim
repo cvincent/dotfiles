@@ -17,7 +17,6 @@ endfunction
 "effect; try to find some fix for this
 silent! nnoremap <Leader>gs :Gstatus<Enter><C-n>
 
-silent! nnoremap <Leader>gc :Git checkout 
 silent! nnoremap <Leader>gm :Git merge 
 silent! nnoremap <Leader>gpl :call PullFromCurrentBranch()<CR>
 silent! nnoremap <Leader>gpu :call PushToCurrentBranch()<CR>
