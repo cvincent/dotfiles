@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd .weechat/python/autoload/
+curl -O https://raw.githubusercontent.com/wee-slack/wee-slack/master/wee_slack.py
