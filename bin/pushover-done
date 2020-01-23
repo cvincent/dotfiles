@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 curl -s \
-  --form-string "token=av9tzz4xnk1as4fwsk9nj3hmii9heq" \
-  --form-string "user=uqqyg55t94pcmxat1e2ajkj5e948dg" \
+  --form-string "token=$PUSHOVER_TOKEN" \
+  --form-string "user=$PUSHOVER_USER" \
   --form-string "title=Script finished!" \
   --form-string "message=Get back to work!" \
   --form-string "sound=magic" \
