@@ -12,6 +12,7 @@
     ~/.Xmodmap: Xmodmap
     ~/.bash_profile: bash/bash_profile
     ~/.bashrc: bash/bashrc
+    ~/.bash_secret: bash/bash_secret
     ~/.compton.conf: compton.conf
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/dunst/dunstrc: ~/.cache/wal/dunstrc
