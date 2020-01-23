@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kitty -o background_opacity=0.85 cal-less
+kitty --class=cal-less -o background_opacity=0.85 cal-less
