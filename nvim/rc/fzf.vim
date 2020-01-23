@@ -11,11 +11,13 @@ let g:fzf_action = {
       \ 'ctrl-s': 'split',
       \ 'ctrl-v': 'vsplit' }
 
-nnoremap <C-P> :Files<cr>
+nnoremap <C-P> :GFiles<cr>
 nnoremap <leader>gc :call <sid>fzf_checkout()<cr>
 
 au FileType fzf set nonumber norelativenumber
 au FileType fzf tnoremap <buffer> <Esc> <C-C>
+au FileType fzf nnoremap <buffer> <C-P> <Up>
+au FileType fzf nnoremap <buffer> <C-N> <Down>
 
 function! FloatingFZF()
   let buf = nvim_create_buf(v:false, v:true)
@@ -25,8 +27,8 @@ function! FloatingFZF()
 
   let height = float2nr(&lines / 3)
   let row = float2nr(&lines / 6 * 2)
-  let width = float2nr(&columns / 3)
-  let col = float2nr(&columns / 6 * 2)
+  let width = float2nr(&columns / 2)
+  let col = float2nr(&columns / 4)
 
   let opts = {
         \ 'relative': 'editor',
@@ -48,3 +50,6 @@ endfunction
 
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+command! -bang -nargs=? -complete=dir GFiles
+  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
