@@ -63,4 +63,4 @@ fi
 
 # Run "real" qutebrowser executable:
 export LD_LIBRARY_PATH=~/vendor/qutebrowser/libssl
-/usr/bin/qutebrowser --enable-webengine-inspector "$@"
+/usr/bin/qutebrowser --enable-webengine-inspector --qt-arg name $session "$@"
