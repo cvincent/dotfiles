@@ -19,19 +19,19 @@ c.editor.command = ['kitty', 'nvim', '{}']
 c.spellcheck.languages = ['en-US']
 c.tabs.position = 'right'
 
-c.fonts.monospace = '"PragmataPro Liga"'
-c.fonts.completion.entry = "10pt monospace"
-c.fonts.completion.category = "bold 10pt monospace"
-c.fonts.debug_console = "10pt monospace"
-c.fonts.downloads = "10pt monospace"
-c.fonts.hints = "10pt monospace"
-c.fonts.keyhint = "10pt monospace"
-c.fonts.messages.error = "10pt monospace"
-c.fonts.messages.info = "10pt monospace"
-c.fonts.messages.warning = "10pt monospace"
-c.fonts.prompts = "10pt monospace"
-c.fonts.statusbar = "10pt monospace"
-c.fonts.tabs = "10pt monospace"
+c.fonts.default_family = "PragmataPro Liga"
+c.fonts.completion.entry = "10pt default_family"
+c.fonts.completion.category = "bold 10pt default_family"
+c.fonts.debug_console = "10pt default_family"
+c.fonts.downloads = "10pt default_family"
+c.fonts.hints = "10pt default_family"
+c.fonts.keyhint = "10pt default_family"
+c.fonts.messages.error = "10pt default_family"
+c.fonts.messages.info = "10pt default_family"
+c.fonts.messages.warning = "10pt default_family"
+c.fonts.prompts = "10pt default_family"
+c.fonts.statusbar = "10pt default_family"
+c.fonts.tabs = "10pt default_family"
 
 # Colors via https://mobile.twitter.com/notthebeeee/status/1061903853120118784
 c.colors.completion.fg = xresources['*.foreground']
