@@ -1,0 +1,13 @@
+#!/bin/sh
+
+regolith-look refresh
+sleep 1
+
+for id in $(wmctrl -l | cut -f1 -d' ')
+do
+  xprop -id $id -remove _NET_WM_WINDOW_OPACITY
+done
+
+pkill compton
+sleep 1
+/usr/share/regolith-compositor/init
