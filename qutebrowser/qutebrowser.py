@@ -99,7 +99,7 @@ c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
 c.colors.keyhint.fg = xresources['*foreground']
 c.colors.keyhint.suffix.fg = xresources['*color2']
 
-config.bind('<ctrl-p>', 'spawn --userscript qute-pass', mode='insert')
+config.bind('<ctrl-shift-p>', 'spawn --userscript qute-pass', mode='insert')
 
 ## Blur input focus when leaving insert mode
 config.bind('<escape>', 'leave-mode ;; jseval -q document.activeElement.blur()', mode='insert')
