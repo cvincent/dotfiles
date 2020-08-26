@@ -87,6 +87,8 @@ export WS_TMUX=$(xrdb -query | grep i3.Workspaces.wsTmux | cut -f2)
 export WS_NVIM=$(xrdb -query | grep i3.Workspaces.wsNvim | cut -f2)
 export WS_COMM=$(xrdb -query | grep i3.Workspaces.wsComm | cut -f2)
 
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
 ###################
 ### STATUS LINE ###
 ###################
