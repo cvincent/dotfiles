@@ -118,11 +118,18 @@ config.bind('e', 'fake-key <ESC>')
 config.bind('U', 'undo')
 config.bind('x', 'tab-close')
 
+config.set('hints.selectors', {
+    **c.hints.selectors,
+    'videos': ['iframe'],
+    })
+
 config.bind('<ctrl-p>', 'set-cmd-text -s :buffer')
 
+
 config.bind(';v', 'hint links spawn mpv --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
-config.bind(';V', 'hint links spawn umpv --playlist --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
-config.bind('V', 'spawn --userscript view_in_umpv --force-window=immediate')
+config.bind(';V', 'hint videos spawn mpv --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
+config.bind(';Y', 'hint videos spawn mpv --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
+config.bind('V', 'spawn mpv --force-window=immediate --no-terminal --keep-open=yes {url}')
 config.bind('<ctrl-r>', 'spawn --userscript readability')
 config.bind('<ctrl-t>', 'spawn --userscript taskadd project:reading.web')
 config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
