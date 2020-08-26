@@ -11,7 +11,7 @@ let g:fzf_action = {
       \ 'ctrl-s': 'split',
       \ 'ctrl-v': 'vsplit' }
 
-nnoremap <C-P> :GFiles<cr>
+nnoremap <C-P> :Files<cr>
 nnoremap <leader>gc :call <sid>fzf_checkout()<cr>
 
 au FileType fzf set nonumber norelativenumber
