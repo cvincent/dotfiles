@@ -20,7 +20,7 @@ LABELS["bluetooth"]=""
 COMMANDS["commands"]="rofi -show run"
 LABELS["commands"]=""
 
-COMMANDS["clipboard"]="rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
+COMMANDS["clipboard"]="rofi-clipster"
 LABELS["clipboard"]=""
 
 COMMANDS["calculator"]="rofi-calc"
