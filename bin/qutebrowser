@@ -59,6 +59,7 @@ if [ "$basedir_specified" != 'y' ]; then
 	ln -fsT "$XDG_CONFIG_HOME/qutebrowser" "$basedir/config"
 	ln -fsT "$XDG_CACHE_HOME/qutebrowser/$session" "$basedir/cache"
 	ln -fsT "$XDG_DATA_HOME/qutebrowser/$session" "$basedir/data"
+	ln -fsT "$XDG_DATA_HOME/qutebrowser/qtwebengine_dictionaries" "$basedir/data/qtwebengine_dictionaries"
 fi
 
 # Run "real" qutebrowser executable:
