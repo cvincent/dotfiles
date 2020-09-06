@@ -135,6 +135,8 @@ config.bind('<ctrl-r>', 'spawn --userscript readability')
 config.bind('<ctrl-t>', 'spawn --userscript taskadd project:reading.web')
 config.bind(',n', 'config-cycle content.user_stylesheets ~/vendor/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css ""')
 config.bind(',dc', 'download-clear')
+config.bind('<return>', 'set-cmd-text :')
+config.bind('<ctrl-l>', 'edit-url')
 
 c.downloads.location.directory = "~/Downloads"
 c.downloads.location.prompt = False
