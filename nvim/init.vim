@@ -289,7 +289,7 @@ set gdefault
 set nowrap
 
 " Scroll 10 lines with CTRL-U/D
-set scroll=10
+silent! set scroll=10
 
 " Always show status line
 set laststatus=1
