@@ -125,6 +125,7 @@ config.set('hints.selectors', {
 
 config.bind('<ctrl-p>', 'set-cmd-text -s :buffer')
 
+config.set('editor.command', ["kitty", "--class=qb-edit", "nvim", "{}"])
 
 config.bind(';v', 'hint links spawn mpv --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
 config.bind(';V', 'hint videos spawn mpv --force-window=immediate --no-terminal --keep-open=yes {hint-url}')
