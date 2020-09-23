@@ -14,7 +14,13 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'vim-airline/vim-airline'
 Plug 'cvincent/vim-airline-themes'
 " Get colors from wal config
-Plug 'dylanaraps/wal.vim'
+" Plug 'dylanaraps/wal.vim'
+" Solarized
+Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
+" Plug 'altercation/vim-colors-solarized'
 " Seamless navigation within tmux
 " Doesn't work alongside split nav wrapping
 " Plug 'christoomey/vim-tmux-navigator'
@@ -295,7 +301,11 @@ silent! set scroll=10
 set laststatus=1
 
 " Load wal-generated colors
-colorscheme walgui
+set termguicolors
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash

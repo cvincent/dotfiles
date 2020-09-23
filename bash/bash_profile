@@ -4,22 +4,13 @@
 #   source /etc/profile
 # fi
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 ########################
 ### VERSION MANAGERS ###
 ########################
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-source /home/redplateaus/.pgvm/pgvm_env
-
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
+. $HOME/.asdf/asdf.sh
 
 ############
 ### PATH ###
@@ -89,17 +80,19 @@ export WS_COMM=$(xrdb -query | grep i3.Workspaces.wsComm | cut -f2)
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
+export THOR_SILENCE_DEPRECATION=1
+
 ###################
 ### STATUS LINE ###
 ###################
 
-function _update_ps1() {
-  PS1=$(powerline-shell $?)
-}
+# function _update_ps1() {
+#   PS1=$(powerline-shell $?)
+# }
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-  PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+# if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#   PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# fi
 
 ###############
 ### SECRETS ###

@@ -9,6 +9,9 @@
     ~/bin/:
       glob: true
       path: bin/*
+    ~/.config/regolith/i3xrocks/conf.d:
+      glob: true
+      path: regolith/i3xrocks/*
     ~/.Xmodmap: Xmodmap
     ~/.bash_profile: bash/bash_profile
     ~/.bashrc: bash/bashrc
@@ -33,6 +36,10 @@
     ~/.config/qutebrowser/config.py: qutebrowser/qutebrowser.py
     ~/.config/qutebrowser/private.py: qutebrowser/private.py
     ~/.config/ranger: ranger
+    ~/.config/regolith/compton/config: regolith/compton.conf
+    ~/.config/regolith/i3/config: regolith/i3.conf
+    ~/.config/regolith/i3blocks.conf: regolith/i3blocks.conf
+    ~/.config/regolith/Xresources: regolith/Xresources
     ~/.config/rofi/config: rofi.conf
     ~/.config/rofi-pass/config: rofi-pass
     ~/.config/sway/config: sway.conf

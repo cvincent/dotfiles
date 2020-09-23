@@ -1,5 +1,5 @@
-let g:airline_theme='walgui'
-exe 'hi! airline_error_bold gui=none guibg=' . g:terminal_color_1
+" let g:airline_theme='walgui'
+" exe 'hi! airline_error_bold gui=none guibg=' . g:terminal_color_1
 
 let g:airline_highlighting_cache = 1
 let g:airline_powerline_fonts = 0

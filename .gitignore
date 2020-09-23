@@ -16,3 +16,4 @@ tmuxinator/*
 vim/vim/.netrwhist
 vim/vim/plugged
 vim/vim/sessions
+layouts/work.json

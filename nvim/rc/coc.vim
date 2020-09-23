@@ -112,10 +112,10 @@ nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-exe 'hi! CocErrorHighlight gui=undercurl guisp=' . g:terminal_color_1
-exe 'hi! CocErrorFloat guifg=' . g:terminal_color_1 . ' guibg=' . g:terminal_color_0
-exe 'hi! CocErrorSign guifg=' . g:terminal_color_1
-exe 'hi! CocWarningFloat guifg=' . g:terminal_color_3 . ' guibg=' . g:terminal_color_0
-exe 'hi! CocWarningSign guifg=' . g:terminal_color_3
-exe 'hi! CocInfoFloat guifg=' . g:terminal_color_3 . ' guibg=' . g:terminal_color_0
-exe 'hi! CocInfoSign guifg=' . g:terminal_color_3
+" exe 'hi! CocErrorHighlight gui=undercurl guisp=' . g:terminal_color_1
+" exe 'hi! CocErrorFloat guifg=' . g:terminal_color_1 . ' guibg=' . g:terminal_color_0
+" exe 'hi! CocErrorSign guifg=' . g:terminal_color_1
+" exe 'hi! CocWarningFloat guifg=' . g:terminal_color_3 . ' guibg=' . g:terminal_color_0
+" exe 'hi! CocWarningSign guifg=' . g:terminal_color_3
+" exe 'hi! CocInfoFloat guifg=' . g:terminal_color_3 . ' guibg=' . g:terminal_color_0
+" exe 'hi! CocInfoSign guifg=' . g:terminal_color_3
