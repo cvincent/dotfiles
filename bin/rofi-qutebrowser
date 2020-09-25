@@ -1,4 +1,4 @@
-#!/home/myuser/.asdf/shims/ruby
+#!/usr/bin/env ruby
 
 find = "find ~/.cache/qutebrowser -maxdepth 1 -type d -exec sh -c 'basename {}' \\;"
 grep = "grep -v -e qutebrowser -e http -e webengine"
