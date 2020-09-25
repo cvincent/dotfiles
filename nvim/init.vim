@@ -219,8 +219,9 @@ set wildignorecase
 set ignorecase
 set smartcase
 
-" Don't show title in Terminal; causes undesired i3 for_window retriggering
-set notitle
+" Title is root directory of project
+set title
+set titlestring=%(%{fnamemodify(getcwd(),\ ':t')}%)
 
 " Minimum of three lines from vertical edges
 set scrolloff=3
@@ -309,6 +310,8 @@ colorscheme solarized
 
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash
+
+set guifont=PragmataPro\ Mono\ Liga:h10.5
 
 " Source other customizations
 for f in split(glob('~/.config/nvim/rc/*.vim'), '\n')
