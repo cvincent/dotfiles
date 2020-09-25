@@ -1,0 +1,52 @@
+#!/bin/bash
+
+cmd="workspace $(xrdb -query | grep i3-wm.workspace.01.name | cut -f2); append_layout ~/dotfiles/layouts/browse.json"
+i3-msg "$cmd"
+cmd="workspace $(xrdb -query | grep i3-wm.workspace.02.name | cut -f2); append_layout ~/dotfiles/layouts/work.json"
+i3-msg "$cmd"
+cmd="workspace $(xrdb -query | grep i3-wm.workspace.03.name | cut -f2); append_layout ~/dotfiles/layouts/tmux.json"
+i3-msg "$cmd"
+cmd="workspace $(xrdb -query | grep i3-wm.workspace.04.name | cut -f2); append_layout ~/dotfiles/layouts/nvim.json"
+i3-msg "$cmd"
+cmd="workspace $(xrdb -query | grep i3-wm.workspace.05.name | cut -f2); append_layout ~/dotfiles/layouts/comm.json"
+i3-msg "$cmd"
+cmd="workspace $(xrdb -query | grep i3-wm.workspace.06.name | cut -f2); append_layout ~/dotfiles/layouts/news.json"
+i3-msg "$cmd"
+
+# Browse
+qutebrowser --enable-webengine-inspector -r personal & disown
+
+# Work
+qutebrowser --enable-webengine-inspector -r $(cat ~/.current-project-browser) & disown
+gnome-calendar & disown
+
+# Tmux
+kitty --name tmux bash -c "cd $(cat ~/.current-project) && tmux" & disown
+
+# Nvim
+cd $(cat ~/.current-project); nvim-qt --name=project-nvim -- -S Session.vim
+cd ~/dotfiles; nvim-qt --name=dotfiles -- -S Session.vim
+
+# Comm
+slack & disown
+hey & disown
+spotify & disown
+
+timeout=$((SECONDS+5))
+while [[ $SECONDS -lt $timeout ]]; do
+  if [[ $(xdotool getwindowname $(xdotool getactivewindow)) =~ Spotify* ]]; then
+    echo $(xdotool getactivewindow)
+    xdotool getactivewindow windowunmap windowmap
+    break
+  fi
+  sleep 0.1
+done
+
+# News
+~/bin/scratch-newsboat & disown
+qutebrowser --enable-webengine-inspector -r news & disown
+qutebrowser --enable-webengine-inspector -r twitter & disown
+
+sleep 1
+
+pkill compton; /usr/share/regolith-compositor/init & disown

@@ -21,7 +21,7 @@
             "swallows": [
                {
                    "class": "^kitty$",
-                   "instance": "^tmux$",
+                   "instance": "^tmux$"
                }
             ],
             "type": "con"

@@ -20,8 +20,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                   "class": "^kitty$",
-                   "instance": "^project-nvim$"
+                   "class": "^project-nvim$",
+                   "instance": "^nvim-qt$"
                }
             ],
             "type": "con"
@@ -39,8 +39,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                   "class": "^kitty$",
-                   "instance": "^dotfiles$"
+                   "class": "^dotfiles$",
+                   "instance": "^nvim-qt$"
                }
             ],
             "type": "con"
