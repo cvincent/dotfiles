@@ -32,7 +32,7 @@ slack & disown
 hey & disown
 spotify & disown
 
-timeout=$((SECONDS+5))
+timeout=$((SECONDS+10))
 while [[ $SECONDS -lt $timeout ]]; do
   if [[ $(xdotool getwindowname $(xdotool getactivewindow)) =~ Spotify* ]]; then
     echo $(xdotool getactivewindow)
