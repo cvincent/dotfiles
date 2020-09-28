@@ -285,6 +285,9 @@ set shiftround
 " Basic auto-indent
 set autoindent
 
+" Include winfixwidth in sessions
+set sessionoptions+=localoptions,winsize,resize
+
 " Per-project .vimrc files; safe commands only
 set exrc
 set secure
