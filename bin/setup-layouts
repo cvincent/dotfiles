@@ -2,6 +2,7 @@
 
 cmd="workspace $(xrdb -query | grep i3-wm.workspace.01.name | cut -f2); append_layout ~/dotfiles/layouts/browse.json"
 i3-msg "$cmd"
+sleep 1
 cmd="workspace $(xrdb -query | grep i3-wm.workspace.02.name | cut -f2); append_layout ~/dotfiles/layouts/work.json"
 i3-msg "$cmd"
 cmd="workspace $(xrdb -query | grep i3-wm.workspace.03.name | cut -f2); append_layout ~/dotfiles/layouts/tmux.json"
