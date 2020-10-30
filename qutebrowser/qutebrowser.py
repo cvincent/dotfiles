@@ -10,6 +10,9 @@ def read_xresources(prefix):
     return props
 xresources = read_xresources('*')
 
+# Load stuff set from GUI, such as website permission dialogs
+config.load_autoconfig()
+
 config.source('private.py')
 
 # c.backend = 'webkit'
