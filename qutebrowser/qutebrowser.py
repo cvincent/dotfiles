@@ -102,6 +102,8 @@ c.fonts.statusbar = "10pt default_family"
 # c.colors.keyhint.fg = xresources['*foreground']
 # c.colors.keyhint.suffix.fg = xresources['*color2']
 
+# c.colors.webpage.darkmode.enabled = True
+
 config.bind('<ctrl-shift-p>', 'spawn --userscript qute-pass', mode='insert')
 
 ## Blur input focus when leaving insert mode
