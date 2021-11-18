@@ -147,6 +147,11 @@ Plug 'pangloss/vim-javascript'
 """""""""""
 Plug 'mxw/vim-jsx'
 
+"""""""""""""""""""""""""""
+""" Mustache/Handlebars """
+"""""""""""""""""""""""""""
+Plug 'mustache/vim-mustache-handlebars'
+
 """"""""""""""""""""""
 """ HAML/SASS/SCSS """
 """"""""""""""""""""""
