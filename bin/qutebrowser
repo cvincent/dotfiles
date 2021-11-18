@@ -62,6 +62,10 @@ if [ "$basedir_specified" != 'y' ]; then
 	ln -fsT "$XDG_DATA_HOME/qutebrowser/qtwebengine_dictionaries" "$basedir/data/qtwebengine_dictionaries"
 fi
 
+echo "$@"
+
 # Run "real" qutebrowser executable:
 export LD_LIBRARY_PATH=~/vendor/qutebrowser/libssl
-/usr/bin/qutebrowser --enable-webengine-inspector --qt-arg name $session "$@"
+# /usr/bin/qutebrowser --enable-webengine-inspector --qt-arg name $session "$@"
+# Use the better-supported virtualenv build
+~/vendor/qutebrowser/.venv/bin/qutebrowser --enable-webengine-inspector --qt-arg name $session "$@"
