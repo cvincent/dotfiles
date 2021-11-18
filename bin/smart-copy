@@ -8,6 +8,7 @@ case $win_name in
   *)
     case $win_class in
         "kitty") xdotool key ctrl+shift+c ;;
+        "tmux") xdotool key ctrl+shift+c ;;
         *) xdotool key ctrl+c ;;
     esac
     ;;
