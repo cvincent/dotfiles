@@ -36,6 +36,7 @@
     ~/.config/powerline-shell: powerline-shell
     ~/.config/qutebrowser/config.py: qutebrowser/qutebrowser.py
     ~/.config/qutebrowser/private.py: qutebrowser/private.py
+    ~/.config/qutebrowser/userscripts: qutebrowser/userscripts
     ~/.config/ranger: ranger
     ~/.config/regolith/compton/config: regolith/compton.conf
     ~/.config/regolith/i3/config: regolith/i3.conf
