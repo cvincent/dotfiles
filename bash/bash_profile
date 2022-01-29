@@ -82,6 +82,9 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 
 export THOR_SILENCE_DEPRECATION=1
 
+# History for iex
+export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
+
 ###################
 ### STATUS LINE ###
 ###################
