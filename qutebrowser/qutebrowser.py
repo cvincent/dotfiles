@@ -122,6 +122,8 @@ config.bind('<ctrl-u>', 'repeat 10 scroll up')
 config.bind('e', 'fake-key <ESC>')
 config.bind('U', 'undo')
 config.bind('x', 'tab-close')
+config.bind('gn', 'tab-move +')
+config.bind('gp', 'tab-move -')
 
 config.set('hints.selectors', {
     **c.hints.selectors,
@@ -148,3 +150,5 @@ c.downloads.location.prompt = False
 
 c.content.autoplay = False
 c.content.cookies.accept = "no-3rdparty"
+
+c.content.headers.user_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:77.0) Gecko/20190101 Firefox/77.0'
