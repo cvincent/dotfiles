@@ -4,7 +4,8 @@
 " set number
 " set nocursorline
 " set norelativenumber
-" set lazyredraw
+set lazyredraw
+set ttyfast
 
 " Turn off stuff that slows down rendering while typing
 " au InsertEnter * :set norelativenumber

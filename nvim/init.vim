@@ -2,10 +2,13 @@ filetype off
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'andymass/vim-matchup'
+
 """"""""""""""""""""
 """ AUTOCOMPLETE """
 """"""""""""""""""""
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+" Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 """"""""""""""""""""""
 """ USER INTERFACE """
@@ -16,7 +19,8 @@ Plug 'cvincent/vim-airline-themes'
 " Get colors from wal config
 " Plug 'dylanaraps/wal.vim'
 " Solarized
-Plug 'frankier/neovim-colors-solarized-truecolor-only'
+" Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'ishan9299/nvim-solarized-lua'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
@@ -194,6 +198,9 @@ filetype plugin indent on
 
 " ### BASIC CONFIG
 
+" Restore default behavior for gg etc
+set startofline
+
 " Allow buffers in the background
 set hidden
 
@@ -208,7 +215,7 @@ let mapleader=" "
 set history=10000
 
 " Enhanced % pair matching (blocks, XML tags, etc)
-runtime! macros/matchit.vim
+" runtime! macros/matchit.vim
 
 " Match angle brackets
 set matchpairs+=<:>
@@ -241,7 +248,7 @@ set noswapfile
 set backspace=indent,eol,start
 
 " Syntax highlighting
-syntax on
+" syntax on
 
 " Start searching while typing
 set incsearch
@@ -311,10 +318,14 @@ set laststatus=1
 
 " Load wal-generated colors
 set termguicolors
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" let g:solarized_termtrans=1
+" let g:solarized_termcolors=256
+" set background=dark
+" colorscheme solarized
+lua <<EOF
+vim.g.solarized_termtrans = 1
+vim.cmd('colorscheme solarized')
+EOF
 
 " Have vim always use bash; we might be using fish or something
 set shell=/bin/bash

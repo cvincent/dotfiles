@@ -15,7 +15,10 @@ endfunction
 "\gs to :Gstatus and move cursor to first file
 "Apparently the <C-n> fires before the status window appears, so has no
 "effect; try to find some fix for this
-silent! nnoremap <Leader>gs :Gstatus<Enter><C-n>
+silent! nnoremap <Leader>gs :Git<Enter><C-n>
+
+autocmd FileType fugitive nnoremap <buffer> <C-n> )
+autocmd FileType fugitive nnoremap <buffer> <C-p> (
 
 silent! nnoremap <Leader>gm :Git merge 
 silent! nnoremap <Leader>gpl :call PullFromCurrentBranch()<CR>
